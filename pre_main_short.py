@@ -18,6 +18,8 @@ torch.backends.cudnn.benchmark = True
 from util.util import timeSince, get_yaml_data
 from util.util import VALRMSE
 
+from net.msp_sttn_density import Prediction_Model as Model
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 TORCH_VERSION = torch.__version__
@@ -87,6 +89,7 @@ def run(mcof):
     DROPOUT = setting['TRAIN']['DROPOUT']
     MERGE = setting['TRAIN']['MERGE']
     PATCH_LIST = setting['TRAIN']['PATCH_LIST']
+    PATCH_LIST = eval(PATCH_LIST)
     IS_USING_SKIP = setting['TRAIN']['IS_USING_SKIP']
     MODEL_DIM = setting['TRAIN']['MODEL_DIM']
     ATT_NUM = setting['TRAIN']['ATT_NUM']
@@ -119,31 +122,6 @@ def run(mcof):
                               Len_trend=LEN_TREND,
                               )
     ds_factory = DatasetFactory(dconf, EXT_TYPE, TRAIN_MODE, DATA_TYPE, LENGTH, IS_SEQ)
-
-    ####MODEL####
-
-    P_list = eval(PATCH_LIST)
-
-    from net.msp_sttn_density import Prediction_Model as Model
-
-    net = Model(
-        mcof,
-        Length=LENGTH,  # 8
-        Width=W,  # 200
-        Height=H,  # 200
-        Input_dim=C,  # 1
-        Patch_list=P_list,  # 小片段的大小
-        Dropout=DROPOUT,
-        Att_num=ATT_NUM,  # 2
-        Cross_att_num=CROSS_ATT_NUM,  # 2
-        Using_skip=IS_USING_SKIP,  # 1
-        Encoding_dim=MODEL_DIM,  # 256
-        Embedding_dim=MODEL_DIM,  # 256
-        Is_mask=IS_MASK_ATT,  # 1
-        Is_reduce=IS_REDUCE,
-        Debugging=0,  # 0
-        Merge=MERGE,  # cross-attention
-    )
 
 
     if IS_TRAIN:
@@ -182,6 +160,15 @@ def run(mcof):
             num_workers=1
         )
 
+
+        ####MODEL####
+        net = Model(
+            mcof, Length=LENGTH, Width=W, Height=H, Input_dim=C,
+            Patch_list=PATCH_LIST, Dropout=DROPOUT, Att_num=ATT_NUM,
+            Cross_att_num=CROSS_ATT_NUM, Using_skip=IS_USING_SKIP,
+            Encoding_dim=MODEL_DIM, Embedding_dim=MODEL_DIM,
+            Is_mask=IS_MASK_ATT, Is_reduce=IS_REDUCE, Debugging=0, Merge=MERGE,
+        )
 
         ####TRAINING####
         print('TRAINING START')
@@ -319,6 +306,10 @@ def run(mcof):
         )
 
 
+
+
+
+
         print('EVALUATION START')
         print('-' * 30)
 
@@ -333,6 +324,16 @@ def run(mcof):
 
                 model_path = './model/Imp_{}/pre_model_{}.pth'.format(RECORD_ID, epoch + 1)
                 print(model_path)
+
+                ####MODEL####
+                net = Model(
+                    mcof, Length=LENGTH, Width=W, Height=H, Input_dim=C,
+                    Patch_list=PATCH_LIST, Dropout=DROPOUT, Att_num=ATT_NUM,
+                    Cross_att_num=CROSS_ATT_NUM, Using_skip=IS_USING_SKIP,
+                    Encoding_dim=MODEL_DIM, Embedding_dim=MODEL_DIM,
+                    Is_mask=IS_MASK_ATT, Is_reduce=IS_REDUCE, Debugging=0, Merge=MERGE,
+                )
+
 
                 net.load_state_dict(torch.load(model_path))
 
