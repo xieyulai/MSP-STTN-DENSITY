@@ -588,9 +588,6 @@ if __name__ == '__main__':
     parser.add_argument('--task', type=str, default='B', help='Processing task type')
     parser.add_argument('--keep_train', type=int, default=0, help='Model keep training')
     parser.add_argument('--epoch_s', type=int, default=0, help='Continue training on the previous model')
-    parser.add_argument('--inp_type', type=str, default='external',
-                        choices=['external', 'accumulate', 'accumulate_avg', 'train', 'holiday', 'windspeed', 'weather',
-                                 'temperature'])
     parser.add_argument('--patch_method', type=str, default='UNFOLD', choices=['EINOPS', 'UNFOLD', 'STTN'])
 
     parser.add_argument('--debug', type=int, default=0, help='Model debug')

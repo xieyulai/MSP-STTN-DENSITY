@@ -1,37 +1,28 @@
 import numpy as np
 import time
-import sys
-import cv2
 import random
+import os
+import math
+from time import localtime, strftime
+from sklearn import metrics
+import argparse
+import shutil
+
 import torch
 import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader, TensorDataset
-import argparse
-import os
-import math
-from time import localtime, strftime
-from sklearn import metrics
-from einops import rearrange
-import matplotlib.pyplot as plt
-
 torch.backends.cudnn.benchmark = True
+
 from util.util import timeSince, get_yaml_data
-from util.util import weights_init, VALRMSE, VALMAPE
-from tensorboardX import SummaryWriter
-import shutil
+from util.util import VALRMSE
 
-import pdb
-
-#os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 TORCH_VERSION = torch.__version__
 
-
 seed = 777
-
 
 class DataConfiguration:
     def __init__(self, Len_close, Len_period, Len_trend):
@@ -128,6 +119,34 @@ def run(mcof):
                               )
     ds_factory = DatasetFactory(dconf, EXT_TYPE, TRAIN_MODE, DATA_TYPE, LENGTH, IS_SEQ)
 
+    ####MODEL####
+    input_channels = C
+
+    P_list = eval(PATCH_LIST)
+
+    from net.msp_sttn_density import Prediction_Model as Model
+
+    net = Model(
+        mcof,
+        Length=LENGTH,  # 8
+        Width=W,  # 200
+        Height=H,  # 200
+        Input_dim=input_channels,  # 1
+        Patch_list=P_list,  # 小片段的大小
+        Dropout=DROPOUT,
+        Att_num=ATT_NUM,  # 2
+        Cross_att_num=CROSS_ATT_NUM,  # 2
+        Using_skip=IS_USING_SKIP,  # 1
+        Encoding_dim=MODEL_DIM,  # 256
+        Embedding_dim=MODEL_DIM,  # 256
+        Is_mask=IS_MASK_ATT,  # 1
+        Is_reduce=IS_REDUCE,
+        Debugging=0,  # 0
+        Merge=MERGE,  # cross-attention
+    )
+
+
+
     if IS_TRAIN:
 
         try:
@@ -164,31 +183,6 @@ def run(mcof):
             num_workers=1
         )
 
-        ####MODEL####
-        input_channels = C
-
-        P_list = eval(PATCH_LIST)
-
-        from net.msp_sttn_density import Prediction_Model as Model
-
-        net = Model(
-            mcof,
-            Length=LENGTH,  # 8
-            Width=W,  # 200
-            Height=H,  # 200
-            Input_dim=input_channels,  # 1
-            Patch_list=P_list,  # 小片段的大小
-            Dropout=DROPOUT,
-            Att_num=ATT_NUM,  # 2
-            Cross_att_num=CROSS_ATT_NUM,  # 2
-            Using_skip=IS_USING_SKIP,  # 1
-            Encoding_dim=MODEL_DIM,  # 256
-            Embedding_dim=MODEL_DIM,  # 256
-            Is_mask=IS_MASK_ATT,  # 1
-            Is_reduce=IS_REDUCE,
-            Debugging=0,  # 0
-            Merge=MERGE,  # cross-attention
-        )
 
         ####TRAINING####
         print('TRAINING START')
@@ -326,11 +320,11 @@ def run(mcof):
             num_workers=1
         )
 
-        #### MODEL ####
-        input_channels = C
-        P_list = eval(PATCH_LIST)
+        ##### MODEL ####
+        #input_channels = C
+        #P_list = eval(PATCH_LIST)
 
-        from net.msp_sttn_density import Prediction_Model as Model
+        #from net.msp_sttn_density import Prediction_Model as Model
 
         print('EVALUATION START')
         print('-' * 30)
@@ -344,33 +338,29 @@ def run(mcof):
             mae_list = []  ###xie
             for epoch in range(EVAL_START_EPOCH, EPOCH_E):
 
-                net = Model(
-                    mcof,
-                    Length=LENGTH,
-                    Width=W,
-                    Height=H,
-                    Input_dim=input_channels,
-                    Patch_list=P_list,
-                    Dropout=DROPOUT,
-                    Att_num=ATT_NUM,
-                    Cross_att_num=CROSS_ATT_NUM,
-                    Using_skip=IS_USING_SKIP,
-                    Encoding_dim=MODEL_DIM,
-                    Embedding_dim=MODEL_DIM,
-                    Is_mask=IS_MASK_ATT,
-                    Is_reduce=IS_REDUCE,
-                    Debugging=0,
-                    Merge=MERGE,
-                )
+                #net = Model(
+                    #mcof,
+                    #Length=LENGTH,
+                    #Width=W,
+                    #Height=H,
+                    #Input_dim=input_channels,
+                    #Patch_list=P_list,
+                    #Dropout=DROPOUT,
+                    #Att_num=ATT_NUM,
+                    #Cross_att_num=CROSS_ATT_NUM,
+                    #Using_skip=IS_USING_SKIP,
+                    #Encoding_dim=MODEL_DIM,
+                    #Embedding_dim=MODEL_DIM,
+                    #Is_mask=IS_MASK_ATT,
+                    #Is_reduce=IS_REDUCE,
+                    #Debugging=0,
+                    #Merge=MERGE,
+                #)
 
                 model_path = './model/Imp_{}/pre_model_{}.pth'.format(RECORD_ID, epoch + 1)
                 print(model_path)
 
-                try:
-                    net.load_state_dict(torch.load(model_path))
-                except:
-                    print('error!')
-                    net = torch.load(model_path)
+                net.load_state_dict(torch.load(model_path))
 
                 device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
                 net = net.to(device)
@@ -472,21 +462,10 @@ if __name__ == '__main__':
     parser.add_argument('--presume_record', type=str, help='Presume Recode ID')
     parser.add_argument('--keep_train', type=int, default=0, help='Model keep training')
     parser.add_argument('--presume_epoch_s', type=int, default=0, help='Continue training on the previous model')
-    parser.add_argument('--inp_type', type=str, default='external',
-                        choices=['external', 'train', 'accumulate', 'accumulate_avg', 'holiday', 'windspeed', 'weather',
-                                 'temperature'])
     parser.add_argument('--patch_method', type=str, default='STTN', choices=['EINOPS', 'UNFOLD', 'STTN'])
     parser.add_argument('--dataset_type', type=str, default='All', choices=['Sub', 'All'],
                         help='datasets type is sub_datasets or all_datasets')
 
-    parser.add_argument('--ext_inp_type', type=str, default='external', choices=['external'])
-    parser.add_argument('--debug', type=int, default=0, help='Model debug')
-    parser.add_argument('--pretrained_class_model_path', type=str, default=None,
-                        help='freeze encoder param,using pretrain param')
-    parser.add_argument('--finetune_class_encoder', dest='finetune_class_encoder',
-                        action='store_true', default=False)
-    parser.add_argument('--pos_en', type=int, default=1, help='positional encoding')
-    parser.add_argument('--pos_en_mode', type=str, default='cat', help='positional encoding mode')
     parser.add_argument('--best', type=int, default=0, help='best test')
     mcof = parser.parse_args()
 
