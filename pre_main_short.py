@@ -101,7 +101,6 @@ def run(mcof):
     ATT_NUM = setting['TRAIN']['ATT_NUM']
     CROSS_ATT_NUM = setting['TRAIN']['CROSS_ATT_NUM']
     IS_MASK_ATT = setting['TRAIN']['IS_MASK_ATT']
-    IS_SCALE = setting['TRAIN']['IS_SCALE']
     LR = setting['TRAIN']['LR']
     EPOCH_E = setting['TRAIN']['EPOCH']
     WARMUP_EPOCH = setting['TRAIN']['WARMUP_EPOCH']
@@ -169,7 +168,6 @@ def run(mcof):
         input_channels = C
 
         P_list = eval(PATCH_LIST)
-        Is_scaling = IS_SCALE
 
         from net.msp_sttn_density import Prediction_Model as Model
 
@@ -188,7 +186,6 @@ def run(mcof):
             Embedding_dim=MODEL_DIM,  # 256
             Is_mask=IS_MASK_ATT,  # 1
             Is_reduce=IS_REDUCE,
-            Is_scaling=Is_scaling,  # 1
             Debugging=0,  # 0
             Merge=MERGE,  # cross-attention
         )
@@ -332,7 +329,6 @@ def run(mcof):
         #### MODEL ####
         input_channels = C
         P_list = eval(PATCH_LIST)
-        Is_scaling = IS_SCALE
 
         from net.msp_sttn_density import Prediction_Model as Model
 
@@ -363,7 +359,6 @@ def run(mcof):
                     Embedding_dim=MODEL_DIM,
                     Is_mask=IS_MASK_ATT,
                     Is_reduce=IS_REDUCE,
-                    Is_scaling=Is_scaling,
                     Debugging=0,
                     Merge=MERGE,
                 )

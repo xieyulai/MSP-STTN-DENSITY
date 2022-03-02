@@ -7,8 +7,6 @@ import numpy as np
 import argparse
 from util.Patching import patching_method
 from util.Pos_embedding import LocPositionalEncoder
-# from visualizer import get_local
-# get_local.activate()
 
 
 class Conv_block(nn.Module):
@@ -59,7 +57,6 @@ class Conv_block(nn.Module):
         if self.is_bn:
             x = self.bn(x)
 
-        #x = x + res # xie
         x = self.activation(x)
 
         return x
@@ -346,7 +343,7 @@ class Prediction_Model(nn.Module):
 
     def __init__(self, mcof, Length, Width, Height, Input_dim, Patch_list, Encoding_dim, Embedding_dim,
                  Dropout=0.2, Att_num=1, Cross_att_num=1, Is_reduce=1, Is_trans=1, Using_skip=0, Debugging=0, Is_mask=0,
-                 residual=1, Is_scaling=1, Merge='addition', Norm_type='LN', **arg):
+                 residual=1,  Merge='addition', Norm_type='LN', **arg):
 
         super().__init__()
 
@@ -496,7 +493,6 @@ class Prediction_Model(nn.Module):
         att_c = att_c + pos#xie
 
         if 1:
-            # get_local.clear()
             for att_layer in self.attention_c:#xie
                 att_c = att_layer(att_c, att_c, None)#xie
             ffn = att_c
@@ -618,7 +614,6 @@ if __name__ == '__main__':
         Embedding_dim=256,  # 256
         Is_mask=1,  # 1
         Is_reduce=0,
-        Is_scaling=0,  # 1
         Debugging=0,  # 0
         Merge='cross-attention',  # cross-attention
         Norm_type='LN'
