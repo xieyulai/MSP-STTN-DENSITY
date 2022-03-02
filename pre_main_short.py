@@ -82,13 +82,13 @@ def run(mcof):
     if len(mcof.mode) > 1:
         if mcof.mode == 'train':
             IS_TRAIN = 1
-            setting = get_yaml_data("./pre_setting_covid.yaml")
+            setting = get_yaml_data("./pre_setting_density.yaml")
             BATCH_SIZE = setting['TRAIN']['BATCH_SIZE']
         if mcof.mode == 'val':
             IS_VAL = 1
             BATCH_SIZE = 24
             RECORD_ID = mcof.record
-            setting = get_yaml_data(f"./record/{RECORD_ID}/pre_setting_covid.yaml")
+            setting = get_yaml_data(f"./record/{RECORD_ID}/pre_setting_density.yaml")
 
     ####SETTING####
     EXT_TYPE = setting['TRAIN']['EXT_TYPE']
@@ -138,7 +138,7 @@ def run(mcof):
 
             oldname = os.getcwd() + os.sep
             newname = f'./record/{RECORD_ID}/'
-            shutil.copyfile(oldname + 'pre_setting_covid.yaml', newname + 'pre_setting_covid.yaml')
+            shutil.copyfile(oldname + 'pre_setting_density.yaml', newname + 'pre_setting_density.yaml')
             shutil.copyfile(oldname + 'pre_main_short.py', newname + 'pre_main_short.py')
             shutil.copytree(oldname + 'net', newname + 'net')
             shutil.copytree(oldname + 'dataset', newname + 'dataset')
@@ -171,7 +171,7 @@ def run(mcof):
         P_list = eval(PATCH_LIST)
         Is_scaling = IS_SCALE
 
-        from net.imp_pos_cl_heat2heat import Prediction_Model as Model
+        from net.msp_sttn_density import Prediction_Model as Model
 
         net = Model(
             mcof,
@@ -334,7 +334,7 @@ def run(mcof):
         P_list = eval(PATCH_LIST)
         Is_scaling = IS_SCALE
 
-        from net.imp_pos_cl_heat2heat import Prediction_Model as Model
+        from net.msp_sttn_density import Prediction_Model as Model
 
         print('EVALUATION START')
         print('-' * 30)
