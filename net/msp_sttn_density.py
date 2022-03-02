@@ -107,10 +107,8 @@ class Patch_Transformer(nn.Module):
         else:
             self.multihead_attn = nn.MultiheadAttention(mid_dim, num_heads=1)
 
-    # @get_local('atten_output_weight')
     def forward(self, c, q, mask):
 
-        # [12, 768, 32, 32]
         B_T, C, H, W = c.shape
         T = self.length
         B = B_T // T
@@ -129,7 +127,6 @@ class Patch_Transformer(nn.Module):
 
         if self.is_mask:
             attn_output, atten_output_weight = self.multihead_attn(Q, K, V, None)
-            #print(' --attention score\t', atten_output_weight.shape)
             x = attn_output
         else:
             Q = Q.permute(1, 0, 2)
@@ -185,7 +182,6 @@ class Decoder(nn.Module):
 
     def forward(self, inp):
 
-        # [12,768,32,32] [12,64,32,32]
         c4, c3, c2, c1 = inp
 
         c5 = self.conv5(c4)
@@ -234,7 +230,6 @@ class DecoderRe(nn.Module):
 
     def forward(self, inp):
 
-        # [12,768,32,32] [12,64,32,32]
         c4, c3, c2, c1 = inp
 
         c5 = self.conv5(c4)
@@ -332,8 +327,6 @@ class Multi_patch_transfomer(nn.Module):
             output.append(z)
             attention_score.append(score)
         output = torch.cat(output, 1)  # (6,256,50,50)
-        # att_score = torch.stack(attention_score,0).numpy()
-        #np.save('../data/att_score.npy',attention_score[0].detach().numpy())
 
 
         return output
@@ -447,40 +440,35 @@ class Prediction_Model(nn.Module):
             nn.LeakyReLU(0.2, inplace=True),
             nn.Dropout(p=0.3))
 
-        # self.softmax_tim = nn.Softmax(dim=1)
-        # self.softmax_typ = nn.Softmax(dim=1)
 
-    def forward(self, inp, inp_q, inp_c):
+    def forward(self, avg, que, con):
 
         # B,T,C,H,W -> BT,C,H,W
-        B, T, C, H, W = inp.shape  # (6, 6, 2, 32, 32)
+        B, T, C, H, W = avg.shape  # (6, 6, 2, 32, 32)
 
-        x = inp.reshape(-1, self.input_channels, H, W)  # (B*T, 2, 32, 32)
-        x_q = inp_q.reshape(-1, self.input_channels, H, W)  # (B*T, 2, 32, 32)
-        x_c = inp_c.reshape(-1, self.input_channels, H, W)
+        x_a = avg.reshape(-1, self.input_channels, H, W)  # (B*T, 2, 32, 32)
+        x_q = que.reshape(-1, self.input_channels, H, W)  # (B*T, 2, 32, 32)
+        x_c = con.reshape(-1, self.input_channels, H, W)
 
-        x = self.norm_bn(x)
+        x_a = self.norm_bn(x_a)
         x_q = self.norm_bn(x_q)
         x_c = self.norm_bn(x_c)
 
-        enc, c3, c2, c1 = self.encoder(x)  # (B×T, 256, 32, 32)
+        enc, c3, c2, c1 = self.encoder(x_a)  # (B×T, 256, 32, 32)
         enc_q, c3_q, c2_q, c1_q = self.encoder_q(x_q)  # (B×T, 256, 32, 32)
         enc_c, c3_c, c2_c, c1_c = self.encoder_c(x_c)
-        #print(enc.shape,c3.shape,c2.shape,c1.shape)
 
         enc = self.dropout(enc)
         enc_q = self.dropout(enc_q)
         enc_c = self.dropout(enc_c)
 
         # 分类预测
-        tim_cls_out = self.tim_class_pred(enc, inp)#xie
-        typ_cls_out = self.typ_class_pred(enc, inp)#xie
-        #tim_cls_out = 0#xie
-        #typ_cls_out = 0#xie
+        tim_cls_out = self.tim_class_pred(enc, avg)#xie
+        typ_cls_out = self.typ_class_pred(enc, avg)#xie
 
         # 位置编码
-        seq_pos, spa_pos = self.pos_embedding(inp)#xie
-        seq_pos, spa_pos = self.pos_embedding(inp)#xie
+        seq_pos, spa_pos = self.pos_embedding(avg)#xie
+        seq_pos, spa_pos = self.pos_embedding(avg)#xie
         pos = torch.cat((spa_pos, seq_pos), dim=1)#xie
 
         att_c = torch.cat((enc_c, enc), dim=1)
@@ -508,14 +496,11 @@ class Prediction_Model(nn.Module):
                 att_q = att_layer(att_c, att_q, None)
             ffn = att_q
 
-        # [12, 768, 32, 32]
         dec = self.decoder([ffn, c3, c2, c1])
 
         out = dec.reshape(-1, T, self.output_channels, H, W)
 
-        # que_cls_out = self.query_class_pred(out)
-
-        out = out + inp
+        out = out + avg
 
         return out, tim_cls_out, typ_cls_out  #, que_cls_out
 
@@ -524,17 +509,13 @@ class Prediction_Model(nn.Module):
         B, T, C, _, _ = inp.shape
         H = self.encoding_h
         W = self.encoding_w
-        # (1,T,32) # [B, T, 32, 32, 32]
+
         pos_t = self.loc_pos_enc(T).permute(1, 2, 0).unsqueeze(-1).type_as(inp)
         pos_t = pos_t.repeat(B, 1, 1, H, W).reshape(B * T, 32 * self.dim_factor, H, W)
 
-        # H位置
-        # (1,H,112)->(112,H,1)  # [B, T, 112, 32, 32]
         spa_h = self.spa_pos_enc(H).permute(2, 1, 0).type_as(inp)
         spa_h = spa_h.repeat(B, T, 1, 1, W).reshape(B * T, (self.encoding_dim-32)//2 * self.dim_factor, H, W)
 
-        # W位置
-        # (1,W,112)->(112,1,W)  # [B, T, 112, 32, 32]
         spa_w = self.spa_pos_enc(W).permute(2, 0, 1).type_as(inp)
         spa_w = spa_w.repeat(B, T, 1, H, 1).reshape(B * T, (self.encoding_dim-32)//2 * self.dim_factor, H, W)
 
@@ -543,42 +524,26 @@ class Prediction_Model(nn.Module):
         return pos_t, spa
 
     def tim_class_pred(self, enc, inp):
-        #`B, T,_,_,_= inp.shape#xie
-        #_, C, H, W = enc.shape
 
         B, T, C, H, W = inp.shape
         enc = self.linear_tim(enc)
-        #enc = enc.reshape(B, T, C, H, W)
 
         enc = enc.reshape(B, -1)
         enc = self.feedforward_tim(enc)
 
-        # cls_out = self.softmax_tim(enc)
 
         return enc
 
     def typ_class_pred(self, enc, inp):
         B, T, C, H, W = inp.shape
-        #B, T,_,_,_= inp.shape#xie
-        #_, C, H, W = enc.shape
 
         enc = self.linear_typ(enc)
-        #enc = enc.reshape(B, T, C, H, W)
 
         enc = enc.reshape(B, -1)
         enc = self.feedforward_typ(enc)
 
-        # typ_out = self.softmax_typ(enc)
-
         return enc
 
-    # def query_class_pred(self, oup):
-    #     B, _, _, _, _ = oup.shape
-    #
-    #     oup = oup.reshape(B, -1)
-    #     oup = self.feedforward_query(oup)
-    #
-    #     return oup
 
 
 if __name__ == '__main__':
@@ -595,7 +560,6 @@ if __name__ == '__main__':
     parser.add_argument('--pos_en_mode', type=str, default='cat', help='positional encoding mode')
     mcof = parser.parse_args()
 
-    #PATCH_LIST = [[4, 4], [4, 4], [4, 4], [4, 4], [8, 8], [8, 8], [8, 8], [8, 8]]
     PATCH_LIST = [[5, 5],[5, 5],[5, 5],[5,5]]
     net = Prediction_Model(
         mcof=mcof,
@@ -622,10 +586,5 @@ if __name__ == '__main__':
     input_q = tensor
     context_c = tensor
 
-    # output = net(input,context)
-    # print(output.shape)
 
     out, tim_out, typ_out = net(input_c, input_q, context_c)
-    # print('=============')
-    # print(out.shape, tim_out.shape)
-    # summary(net, input_c, input_q, context_c)

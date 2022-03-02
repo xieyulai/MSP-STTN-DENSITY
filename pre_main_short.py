@@ -96,6 +96,7 @@ def run(mcof):
     EPOCH_E = setting['TRAIN']['EPOCH']
     WARMUP_EPOCH = setting['TRAIN']['WARMUP_EPOCH']
     MILE_STONE = setting['TRAIN']['MILE_STONE']
+    LOSS = setting['TRAIN']['LOSS']
     LOSS_MAIN = setting['TRAIN']['LOSS_MAIN']
     LOSS_TIM = setting['TRAIN']['LOSS_TIM']
     LOSS_TYP = setting['TRAIN']['LOSS_TYP']
@@ -120,7 +121,6 @@ def run(mcof):
     ds_factory = DatasetFactory(dconf, EXT_TYPE, TRAIN_MODE, DATA_TYPE, LENGTH, IS_SEQ)
 
     ####MODEL####
-    input_channels = C
 
     P_list = eval(PATCH_LIST)
 
@@ -131,7 +131,7 @@ def run(mcof):
         Length=LENGTH,  # 8
         Width=W,  # 200
         Height=H,  # 200
-        Input_dim=input_channels,  # 1
+        Input_dim=C,  # 1
         Patch_list=P_list,  # 小片段的大小
         Dropout=DROPOUT,
         Att_num=ATT_NUM,  # 2
@@ -144,7 +144,6 @@ def run(mcof):
         Debugging=0,  # 0
         Merge=MERGE,  # cross-attention
     )
-
 
 
     if IS_TRAIN:
@@ -201,21 +200,20 @@ def run(mcof):
             WARMUP_EPOCH) else gamma ** len([m for m in eval(MILE_STONE) if m <= epoch])
         scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=warm_up_with_multistep_lr)
 
-        # criterion = torch.nn.MSELoss()
-        criterion = torch.nn.L1Loss()
+        if LOSS == 'L1':
+            criterion = torch.nn.L1Loss()
+        elif LOSS == 'L2':
+            criterion = torch.nn.MSELoss()
+
         class_criterion = nn.CrossEntropyLoss()
 
         if Keep_Train:
-            path = './model/Imp_{}/pre_model_{}.pth'.format(DATA_TYPE, PRESUME_RECORD_ID,
-                                                                            PRESUME_EPOCH_S)
-            # net.load_state_dict(torch.load(path))
+            path = './model/Imp_{}/pre_model_{}.pth'.format(DATA_TYPE, PRESUME_RECORD_ID, PRESUME_EPOCH_S)
             pretrained_dict = torch.load(path)
             net_dict = net.state_dict()
             pretrained_dict = {k: v for k, v in pretrained_dict.items() if k in net_dict}
             net_dict.update(pretrained_dict)
             net.load_state_dict(net_dict)
-        else:
-            pass
 
         #### 训练设备准备
         net = net.to(device)
@@ -228,11 +226,11 @@ def run(mcof):
             net.train()
             for i, data in enumerate(train_loader):
 
-                con, ave, ave_q, label, tim_cls, typ_cls = data
+                con, ave, que, label, tim_cls, typ_cls = data
 
                 B, T, C, H, W = con.shape
                 ave = ave.to(device)
-                ave_q = ave_q.to(device)
+                que = que.to(device)
                 con = con.to(device)
                 label = label.to(device)
                 tim_cls = tim_cls.squeeze().to(device)
@@ -240,7 +238,7 @@ def run(mcof):
 
                 optimizer.zero_grad()
 
-                out, tim_out, typ_out = net(ave, ave_q, con)
+                out, tim_out, typ_out = net(ave, que, con)
 
                 out = out.reshape(B, T, C, H, W)
 
@@ -261,7 +259,7 @@ def run(mcof):
                 optimizer.step()
 
                 net.eval()
-                out, tim_out, typ_out = net(ave, ave_q, con)
+                out, tim_out, typ_out = net(ave, que, con)
 
                 _, out_tim = torch.max(torch.softmax(tim_out, 1), 1)
                 out_tim = out_tim.cpu().numpy()
@@ -320,11 +318,6 @@ def run(mcof):
             num_workers=1
         )
 
-        ##### MODEL ####
-        #input_channels = C
-        #P_list = eval(PATCH_LIST)
-
-        #from net.msp_sttn_density import Prediction_Model as Model
 
         print('EVALUATION START')
         print('-' * 30)
@@ -337,25 +330,6 @@ def run(mcof):
             rmse_list = []  ###xie
             mae_list = []  ###xie
             for epoch in range(EVAL_START_EPOCH, EPOCH_E):
-
-                #net = Model(
-                    #mcof,
-                    #Length=LENGTH,
-                    #Width=W,
-                    #Height=H,
-                    #Input_dim=input_channels,
-                    #Patch_list=P_list,
-                    #Dropout=DROPOUT,
-                    #Att_num=ATT_NUM,
-                    #Cross_att_num=CROSS_ATT_NUM,
-                    #Using_skip=IS_USING_SKIP,
-                    #Encoding_dim=MODEL_DIM,
-                    #Embedding_dim=MODEL_DIM,
-                    #Is_mask=IS_MASK_ATT,
-                    #Is_reduce=IS_REDUCE,
-                    #Debugging=0,
-                    #Merge=MERGE,
-                #)
 
                 model_path = './model/Imp_{}/pre_model_{}.pth'.format(RECORD_ID, epoch + 1)
                 print(model_path)
@@ -380,7 +354,7 @@ def run(mcof):
                     for i, data in enumerate(test_loader, 0):
 
                         # (B,6,2,32,32)
-                        con, ave, ave_q, label, tim_cls, typ_cls = data
+                        con, ave, que, label, tim_cls, typ_cls = data
 
                         if IS_SEQ:
                             tar = label[:, 0]
@@ -388,11 +362,11 @@ def run(mcof):
                             tar = label  ##niu
 
                         ave = ave.to(device)
-                        ave_q = ave_q.to(device)
+                        que = que.to(device)
                         tar = tar.to(device)
                         con = con.to(device)
 
-                        gen_out, tim_out, typ_out = net(ave, ave_q, con)
+                        gen_out, tim_out, typ_out = net(ave, que, con)
                         # (2,32,32)
                         oup = gen_out[:, 0]
 
