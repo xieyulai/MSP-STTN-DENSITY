@@ -1,4 +1,4 @@
-#0!/bin/bash
+#!/bin/bash
 #DIM512
 RECORD=1712
 #DIM256
