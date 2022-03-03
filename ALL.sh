@@ -1,5 +1,5 @@
 #!/bin/bash
-RECORD=1720
+RECORD=5720
 
 ###TRAIN
 python3 pre_main_short.py --mode train --record $RECORD 

@@ -1,9 +1,9 @@
 TRAIN:
-  EXT_TYPE: 'ho_wd'
-  TRAIN_MODE: 'train_split_2'
-
   #EXT_TYPE: 'ho_wd'
-  #TRAIN_MODE: 'train_split_1'
+  #TRAIN_MODE: 'train_split_2'
+
+  EXT_TYPE: 'ho_wd'
+  TRAIN_MODE: 'train_split_1'
 
   EVAL_START_EPOCH: 0
   DROPOUT: 0.1
