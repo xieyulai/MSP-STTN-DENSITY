@@ -1,0 +1,980 @@
+-- Iter:0,Loss:TOTAL:0.530875,G: 0.530415,Q: 3.196405,Class:6.25,lr:[0.0]
+[epoch 0][1/39] mae: 0.5304 rmse: 765.1011
+-- Iter:20,Loss:TOTAL:0.530139,G: 0.529681,Q: 3.166452,Class:6.25,lr:[0.0]
+[epoch 0][21/39] mae: 0.5297 rmse: 765.0927
+EPOCH:0/200,Loss D:0.529619, Time 1m 18s
+-- Iter:40,Loss:TOTAL:0.484943,G: 0.484486,Q: 3.168199,Class:0.0,lr:[2e-05]
+[epoch 1][2/39] mae: 0.4845 rmse: 715.5707
+-- Iter:60,Loss:TOTAL:0.237664,G: 0.237218,Q: 3.179863,Class:0.0,lr:[2e-05]
+[epoch 1][22/39] mae: 0.2372 rmse: 481.9100
+EPOCH:1/200,Loss D:0.166292, Time 2m 4s
+-- Iter:80,Loss:TOTAL:0.152113,G: 0.151666,Q: 3.180476,Class:6.25,lr:[4e-05]
+[epoch 2][3/39] mae: 0.1517 rmse: 405.4799
+-- Iter:100,Loss:TOTAL:0.104261,G: 0.103825,Q: 3.116327,Class:18.75,lr:[4e-05]
+[epoch 2][23/39] mae: 0.1038 rmse: 331.3552
+EPOCH:2/200,Loss D:0.083030, Time 2m 51s
+-- Iter:120,Loss:TOTAL:0.080504,G: 0.080051,Q: 3.188101,Class:0.0,lr:[6e-05]
+[epoch 3][4/39] mae: 0.0801 rmse: 287.3568
+-- Iter:140,Loss:TOTAL:0.062305,G: 0.061882,Q: 2.974303,Class:18.75,lr:[6e-05]
+[epoch 3][24/39] mae: 0.0619 rmse: 251.2060
+EPOCH:3/200,Loss D:0.054065, Time 3m 38s
+-- Iter:160,Loss:TOTAL:0.055239,G: 0.054840,Q: 2.869359,Class:18.75,lr:[8e-05]
+[epoch 4][5/39] mae: 0.0548 rmse: 230.1207
+-- Iter:180,Loss:TOTAL:0.047163,G: 0.046794,Q: 2.652367,Class:18.75,lr:[8e-05]
+[epoch 4][25/39] mae: 0.0468 rmse: 216.8242
+EPOCH:4/200,Loss D:0.043526, Time 4m 25s
+-- Iter:200,Loss:TOTAL:0.040887,G: 0.040543,Q: 2.606870,Class:62.5,lr:[0.0001]
+[epoch 5][6/39] mae: 0.0405 rmse: 197.4631
+-- Iter:220,Loss:TOTAL:0.036428,G: 0.036057,Q: 2.649367,Class:31.25,lr:[0.0001]
+[epoch 5][26/39] mae: 0.0361 rmse: 187.6169
+EPOCH:5/200,Loss D:0.035329, Time 5m 12s
+-- Iter:240,Loss:TOTAL:0.035772,G: 0.035399,Q: 2.413488,Class:56.25,lr:[0.0001]
+[epoch 6][7/39] mae: 0.0354 rmse: 173.9411
+-- Iter:260,Loss:TOTAL:0.038451,G: 0.038088,Q: 2.683482,Class:37.5,lr:[0.0001]
+[epoch 6][27/39] mae: 0.0381 rmse: 183.6235
+EPOCH:6/200,Loss D:0.032696, Time 6m 0s
+-- Iter:280,Loss:TOTAL:0.030821,G: 0.030492,Q: 2.184791,Class:56.25,lr:[0.0001]
+[epoch 7][8/39] mae: 0.0305 rmse: 171.0612
+-- Iter:300,Loss:TOTAL:0.028359,G: 0.028025,Q: 2.673528,Class:31.25,lr:[0.0001]
+[epoch 7][28/39] mae: 0.0280 rmse: 162.9335
+EPOCH:7/200,Loss D:0.028345, Time 6m 45s
+-- Iter:320,Loss:TOTAL:0.024591,G: 0.024247,Q: 2.510838,Class:18.75,lr:[0.0001]
+[epoch 8][9/39] mae: 0.0242 rmse: 143.2834
+-- Iter:340,Loss:TOTAL:0.024304,G: 0.023982,Q: 2.513634,Class:25.0,lr:[0.0001]
+[epoch 8][29/39] mae: 0.0240 rmse: 143.2086
+EPOCH:8/200,Loss D:0.024006, Time 7m 31s
+-- Iter:360,Loss:TOTAL:0.024275,G: 0.023950,Q: 2.438659,Class:37.5,lr:[0.0001]
+[epoch 9][10/39] mae: 0.0239 rmse: 144.2216
+-- Iter:380,Loss:TOTAL:0.020838,G: 0.020590,Q: 1.824055,Class:56.25,lr:[0.0001]
+[epoch 9][30/39] mae: 0.0206 rmse: 126.5604
+EPOCH:9/200,Loss D:0.016995, Time 8m 15s
+-- Iter:400,Loss:TOTAL:0.018618,G: 0.018277,Q: 2.612982,Class:43.75,lr:[0.0001]
+[epoch 10][11/39] mae: 0.0183 rmse: 93.5019
+-- Iter:420,Loss:TOTAL:0.010688,G: 0.010451,Q: 1.786781,Class:37.5,lr:[0.0001]
+[epoch 10][31/39] mae: 0.0105 rmse: 59.3181
+EPOCH:10/200,Loss D:0.011278, Time 9m 0s
+-- Iter:440,Loss:TOTAL:0.009151,G: 0.008844,Q: 2.225956,Class:56.25,lr:[0.0001]
+[epoch 11][12/39] mae: 0.0088 rmse: 27.3360
+-- Iter:460,Loss:TOTAL:0.006658,G: 0.006330,Q: 2.616418,Class:43.75,lr:[0.0001]
+[epoch 11][32/39] mae: 0.0063 rmse: 19.7318
+EPOCH:11/200,Loss D:0.006038, Time 9m 45s
+-- Iter:480,Loss:TOTAL:0.005883,G: 0.005605,Q: 1.939127,Class:75.0,lr:[0.0001]
+[epoch 12][13/39] mae: 0.0056 rmse: 11.7061
+-- Iter:500,Loss:TOTAL:0.006731,G: 0.006391,Q: 2.759684,Class:43.75,lr:[0.0001]
+[epoch 12][33/39] mae: 0.0064 rmse: 14.6895
+EPOCH:12/200,Loss D:0.008848, Time 10m 30s
+-- Iter:520,Loss:TOTAL:0.005078,G: 0.004752,Q: 2.729540,Class:56.25,lr:[0.0001]
+[epoch 13][14/39] mae: 0.0048 rmse: 13.3664
+-- Iter:540,Loss:TOTAL:0.006687,G: 0.006370,Q: 2.819113,Class:25.0,lr:[0.0001]
+[epoch 13][34/39] mae: 0.0064 rmse: 20.5318
+EPOCH:13/200,Loss D:0.005422, Time 11m 15s
+-- Iter:560,Loss:TOTAL:0.004399,G: 0.004149,Q: 1.821129,Class:43.75,lr:[0.0001]
+[epoch 14][15/39] mae: 0.0041 rmse: 12.0149
+-- Iter:580,Loss:TOTAL:0.005080,G: 0.004778,Q: 2.560017,Class:43.75,lr:[0.0001]
+[epoch 14][35/39] mae: 0.0048 rmse: 16.0622
+EPOCH:14/200,Loss D:0.003775, Time 11m 59s
+-- Iter:600,Loss:TOTAL:0.004939,G: 0.004730,Q: 1.773206,Class:25.0,lr:[0.0001]
+[epoch 15][16/39] mae: 0.0047 rmse: 14.2705
+-- Iter:620,Loss:TOTAL:0.004233,G: 0.003954,Q: 2.143685,Class:62.5,lr:[0.0001]
+[epoch 15][36/39] mae: 0.0040 rmse: 12.9438
+EPOCH:15/200,Loss D:0.004020, Time 12m 44s
+-- Iter:640,Loss:TOTAL:0.004654,G: 0.004436,Q: 1.687799,Class:56.25,lr:[0.0001]
+[epoch 16][17/39] mae: 0.0044 rmse: 14.3652
+-- Iter:660,Loss:TOTAL:0.004729,G: 0.004494,Q: 1.493911,Class:50.0,lr:[0.0001]
+[epoch 16][37/39] mae: 0.0045 rmse: 11.9241
+EPOCH:16/200,Loss D:0.005915, Time 13m 29s
+-- Iter:680,Loss:TOTAL:0.004606,G: 0.004333,Q: 2.314551,Class:50.0,lr:[0.0001]
+[epoch 17][18/39] mae: 0.0043 rmse: 14.7044
+-- Iter:700,Loss:TOTAL:0.004592,G: 0.004307,Q: 2.509197,Class:43.75,lr:[0.0001]
+[epoch 17][38/39] mae: 0.0043 rmse: 11.2363
+EPOCH:17/200,Loss D:0.006283, Time 14m 13s
+-- Iter:720,Loss:TOTAL:0.004800,G: 0.004593,Q: 1.731544,Class:56.25,lr:[0.0001]
+[epoch 18][19/39] mae: 0.0046 rmse: 15.4960
+-- Iter:740,Loss:TOTAL:0.005170,G: 0.004901,Q: 2.272201,Class:56.25,lr:[0.0001]
+[epoch 18][39/39] mae: 0.0049 rmse: 18.4003
+EPOCH:18/200,Loss D:0.005170, Time 15m 0s
+-- Iter:760,Loss:TOTAL:0.004349,G: 0.004106,Q: 1.944982,Class:50.0,lr:[0.0001]
+[epoch 19][20/39] mae: 0.0041 rmse: 15.0323
+EPOCH:19/200,Loss D:0.003931, Time 15m 47s
+-- Iter:780,Loss:TOTAL:0.004591,G: 0.004344,Q: 1.771582,Class:81.25,lr:[0.0001]
+[epoch 20][1/39] mae: 0.0043 rmse: 16.0445
+-- Iter:800,Loss:TOTAL:0.003040,G: 0.002796,Q: 1.983076,Class:68.75,lr:[0.0001]
+[epoch 20][21/39] mae: 0.0028 rmse: 9.3749
+EPOCH:20/200,Loss D:0.004317, Time 16m 32s
+-- Iter:820,Loss:TOTAL:0.004257,G: 0.004074,Q: 1.347796,Class:81.25,lr:[0.0001]
+[epoch 21][2/39] mae: 0.0041 rmse: 16.6590
+-- Iter:840,Loss:TOTAL:0.004187,G: 0.003895,Q: 2.757927,Class:50.0,lr:[0.0001]
+[epoch 21][22/39] mae: 0.0039 rmse: 9.4996
+EPOCH:21/200,Loss D:0.003410, Time 17m 18s
+-- Iter:860,Loss:TOTAL:0.003670,G: 0.003394,Q: 2.044730,Class:93.75,lr:[0.0001]
+[epoch 22][3/39] mae: 0.0034 rmse: 13.1311
+-- Iter:880,Loss:TOTAL:0.003964,G: 0.003715,Q: 1.999828,Class:81.25,lr:[0.0001]
+[epoch 22][23/39] mae: 0.0037 rmse: 12.5281
+EPOCH:22/200,Loss D:0.005045, Time 18m 3s
+-- Iter:900,Loss:TOTAL:0.003642,G: 0.003472,Q: 1.213694,Class:62.5,lr:[0.0001]
+[epoch 23][4/39] mae: 0.0035 rmse: 13.7071
+-- Iter:920,Loss:TOTAL:0.003117,G: 0.002908,Q: 1.786699,Class:68.75,lr:[0.0001]
+[epoch 23][24/39] mae: 0.0029 rmse: 8.9360
+EPOCH:23/200,Loss D:0.003421, Time 18m 48s
+-- Iter:940,Loss:TOTAL:0.003075,G: 0.002827,Q: 2.018001,Class:62.5,lr:[0.0001]
+[epoch 24][5/39] mae: 0.0028 rmse: 9.7120
+-- Iter:960,Loss:TOTAL:0.003686,G: 0.003446,Q: 2.142391,Class:56.25,lr:[0.0001]
+[epoch 24][25/39] mae: 0.0034 rmse: 10.4221
+EPOCH:24/200,Loss D:0.003104, Time 19m 34s
+-- Iter:980,Loss:TOTAL:0.003746,G: 0.003506,Q: 1.953004,Class:56.25,lr:[0.0001]
+[epoch 25][6/39] mae: 0.0035 rmse: 16.4713
+-- Iter:1000,Loss:TOTAL:0.003241,G: 0.003021,Q: 1.822691,Class:81.25,lr:[0.0001]
+[epoch 25][26/39] mae: 0.0030 rmse: 10.1138
+EPOCH:25/200,Loss D:0.003636, Time 20m 19s
+-- Iter:1020,Loss:TOTAL:0.003875,G: 0.003675,Q: 1.561652,Class:56.25,lr:[0.0001]
+[epoch 26][7/39] mae: 0.0037 rmse: 12.2531
+-- Iter:1040,Loss:TOTAL:0.003837,G: 0.003601,Q: 1.977973,Class:62.5,lr:[0.0001]
+[epoch 26][27/39] mae: 0.0036 rmse: 13.6775
+EPOCH:26/200,Loss D:0.004568, Time 21m 5s
+-- Iter:1060,Loss:TOTAL:0.002880,G: 0.002716,Q: 1.461288,Class:62.5,lr:[0.0001]
+[epoch 27][8/39] mae: 0.0027 rmse: 11.8918
+-- Iter:1080,Loss:TOTAL:0.003003,G: 0.002697,Q: 2.160530,Class:75.0,lr:[0.0001]
+[epoch 27][28/39] mae: 0.0027 rmse: 8.9723
+EPOCH:27/200,Loss D:0.004691, Time 21m 54s
+-- Iter:1100,Loss:TOTAL:0.003017,G: 0.002832,Q: 1.724714,Class:50.0,lr:[0.0001]
+[epoch 28][9/39] mae: 0.0028 rmse: 10.4752
+-- Iter:1120,Loss:TOTAL:0.003911,G: 0.003736,Q: 1.271201,Class:93.75,lr:[0.0001]
+[epoch 28][29/39] mae: 0.0037 rmse: 16.0380
+EPOCH:28/200,Loss D:0.004705, Time 22m 42s
+-- Iter:1140,Loss:TOTAL:0.003658,G: 0.003464,Q: 1.765147,Class:50.0,lr:[0.0001]
+[epoch 29][10/39] mae: 0.0035 rmse: 17.2627
+-- Iter:1160,Loss:TOTAL:0.003640,G: 0.003465,Q: 1.511636,Class:50.0,lr:[0.0001]
+[epoch 29][30/39] mae: 0.0035 rmse: 12.5450
+EPOCH:29/200,Loss D:0.003661, Time 23m 28s
+-- Iter:1180,Loss:TOTAL:0.003573,G: 0.003315,Q: 1.832264,Class:62.5,lr:[0.0001]
+[epoch 30][11/39] mae: 0.0033 rmse: 6.1265
+-- Iter:1200,Loss:TOTAL:0.004088,G: 0.003862,Q: 1.937027,Class:75.0,lr:[0.0001]
+[epoch 30][31/39] mae: 0.0039 rmse: 17.4491
+EPOCH:30/200,Loss D:0.004969, Time 24m 16s
+-- Iter:1220,Loss:TOTAL:0.004397,G: 0.004232,Q: 1.447595,Class:62.5,lr:[0.0001]
+[epoch 31][12/39] mae: 0.0042 rmse: 15.4282
+-- Iter:1240,Loss:TOTAL:0.004928,G: 0.004718,Q: 1.817813,Class:75.0,lr:[0.0001]
+[epoch 31][32/39] mae: 0.0047 rmse: 19.4852
+EPOCH:31/200,Loss D:0.003931, Time 25m 3s
+-- Iter:1260,Loss:TOTAL:0.006583,G: 0.006312,Q: 2.381564,Class:50.0,lr:[0.0001]
+[epoch 32][13/39] mae: 0.0063 rmse: 25.3085
+-- Iter:1280,Loss:TOTAL:0.003148,G: 0.002912,Q: 1.811785,Class:68.75,lr:[0.0001]
+[epoch 32][33/39] mae: 0.0029 rmse: 11.6797
+EPOCH:32/200,Loss D:0.003488, Time 25m 48s
+-- Iter:1300,Loss:TOTAL:0.002971,G: 0.002784,Q: 1.646908,Class:75.0,lr:[0.0001]
+[epoch 33][14/39] mae: 0.0028 rmse: 11.6255
+-- Iter:1320,Loss:TOTAL:0.004394,G: 0.004194,Q: 1.712553,Class:62.5,lr:[0.0001]
+[epoch 33][34/39] mae: 0.0042 rmse: 16.4952
+EPOCH:33/200,Loss D:0.004312, Time 26m 32s
+-- Iter:1340,Loss:TOTAL:0.001938,G: 0.001765,Q: 1.362393,Class:87.5,lr:[0.0001]
+[epoch 34][15/39] mae: 0.0018 rmse: 4.9803
+-- Iter:1360,Loss:TOTAL:0.002651,G: 0.002439,Q: 1.742317,Class:62.5,lr:[0.0001]
+[epoch 34][35/39] mae: 0.0024 rmse: 9.3990
+EPOCH:34/200,Loss D:0.004663, Time 27m 17s
+-- Iter:1380,Loss:TOTAL:0.005033,G: 0.004885,Q: 1.314855,Class:75.0,lr:[0.0001]
+[epoch 35][16/39] mae: 0.0049 rmse: 18.9364
+-- Iter:1400,Loss:TOTAL:0.003035,G: 0.002817,Q: 1.980049,Class:81.25,lr:[0.0001]
+[epoch 35][36/39] mae: 0.0028 rmse: 10.7854
+EPOCH:35/200,Loss D:0.003136, Time 28m 2s
+-- Iter:1420,Loss:TOTAL:0.005118,G: 0.004920,Q: 1.941756,Class:68.75,lr:[0.0001]
+[epoch 36][17/39] mae: 0.0049 rmse: 20.7165
+-- Iter:1440,Loss:TOTAL:0.003620,G: 0.003335,Q: 2.507669,Class:100.0,lr:[0.0001]
+[epoch 36][37/39] mae: 0.0033 rmse: 9.8784
+EPOCH:36/200,Loss D:0.004716, Time 28m 47s
+-- Iter:1460,Loss:TOTAL:0.004606,G: 0.004433,Q: 1.578663,Class:68.75,lr:[0.0001]
+[epoch 37][18/39] mae: 0.0044 rmse: 16.5042
+-- Iter:1480,Loss:TOTAL:0.002897,G: 0.002643,Q: 1.935311,Class:62.5,lr:[0.0001]
+[epoch 37][38/39] mae: 0.0026 rmse: 10.1549
+EPOCH:37/200,Loss D:0.002569, Time 29m 32s
+-- Iter:1500,Loss:TOTAL:0.003388,G: 0.003213,Q: 1.569246,Class:100.0,lr:[0.0001]
+[epoch 38][19/39] mae: 0.0032 rmse: 13.1482
+-- Iter:1520,Loss:TOTAL:0.004336,G: 0.004151,Q: 1.665326,Class:75.0,lr:[0.0001]
+[epoch 38][39/39] mae: 0.0042 rmse: 16.1166
+EPOCH:38/200,Loss D:0.004336, Time 30m 16s
+-- Iter:1540,Loss:TOTAL:0.003816,G: 0.003595,Q: 1.713402,Class:68.75,lr:[0.0001]
+[epoch 39][20/39] mae: 0.0036 rmse: 13.5279
+EPOCH:39/200,Loss D:0.003714, Time 31m 1s
+-- Iter:1560,Loss:TOTAL:0.003016,G: 0.002866,Q: 1.305834,Class:56.25,lr:[0.0001]
+[epoch 40][1/39] mae: 0.0029 rmse: 12.1852
+-- Iter:1580,Loss:TOTAL:0.005275,G: 0.005047,Q: 2.107363,Class:75.0,lr:[0.0001]
+[epoch 40][21/39] mae: 0.0050 rmse: 22.1067
+EPOCH:40/200,Loss D:0.004535, Time 31m 46s
+-- Iter:1600,Loss:TOTAL:0.003345,G: 0.003178,Q: 1.374916,Class:68.75,lr:[0.0001]
+[epoch 41][2/39] mae: 0.0032 rmse: 11.9324
+-- Iter:1620,Loss:TOTAL:0.003642,G: 0.003520,Q: 1.052352,Class:75.0,lr:[0.0001]
+[epoch 41][22/39] mae: 0.0035 rmse: 13.7027
+EPOCH:41/200,Loss D:0.003813, Time 32m 31s
+-- Iter:1640,Loss:TOTAL:0.003571,G: 0.003324,Q: 2.254410,Class:81.25,lr:[0.0001]
+[epoch 42][3/39] mae: 0.0033 rmse: 14.1967
+-- Iter:1660,Loss:TOTAL:0.002797,G: 0.002636,Q: 1.331074,Class:75.0,lr:[0.0001]
+[epoch 42][23/39] mae: 0.0026 rmse: 9.5526
+EPOCH:42/200,Loss D:0.003161, Time 33m 17s
+-- Iter:1680,Loss:TOTAL:0.003176,G: 0.002875,Q: 2.388726,Class:81.25,lr:[0.0001]
+[epoch 43][4/39] mae: 0.0029 rmse: 11.3093
+-- Iter:1700,Loss:TOTAL:0.003797,G: 0.003627,Q: 1.298676,Class:81.25,lr:[0.0001]
+[epoch 43][24/39] mae: 0.0036 rmse: 16.6393
+EPOCH:43/200,Loss D:0.004327, Time 34m 3s
+-- Iter:1720,Loss:TOTAL:0.003749,G: 0.003573,Q: 1.538397,Class:87.5,lr:[0.0001]
+[epoch 44][5/39] mae: 0.0036 rmse: 13.9852
+-- Iter:1740,Loss:TOTAL:0.003465,G: 0.003226,Q: 2.056693,Class:87.5,lr:[0.0001]
+[epoch 44][25/39] mae: 0.0032 rmse: 13.7628
+EPOCH:44/200,Loss D:0.003766, Time 34m 49s
+-- Iter:1760,Loss:TOTAL:0.003855,G: 0.003575,Q: 2.125911,Class:68.75,lr:[0.0001]
+[epoch 45][6/39] mae: 0.0036 rmse: 17.7242
+-- Iter:1780,Loss:TOTAL:0.003213,G: 0.002931,Q: 2.331601,Class:87.5,lr:[0.0001]
+[epoch 45][26/39] mae: 0.0029 rmse: 13.1270
+EPOCH:45/200,Loss D:0.005154, Time 35m 34s
+-- Iter:1800,Loss:TOTAL:0.003582,G: 0.003414,Q: 1.488835,Class:62.5,lr:[0.0001]
+[epoch 46][7/39] mae: 0.0034 rmse: 15.2887
+-- Iter:1820,Loss:TOTAL:0.003768,G: 0.003643,Q: 0.945472,Class:75.0,lr:[0.0001]
+[epoch 46][27/39] mae: 0.0036 rmse: 20.2806
+EPOCH:46/200,Loss D:0.002573, Time 36m 19s
+-- Iter:1840,Loss:TOTAL:0.003482,G: 0.003392,Q: 0.645640,Class:93.75,lr:[0.0001]
+[epoch 47][8/39] mae: 0.0034 rmse: 12.0534
+-- Iter:1860,Loss:TOTAL:0.004268,G: 0.004119,Q: 1.377740,Class:62.5,lr:[0.0001]
+[epoch 47][28/39] mae: 0.0041 rmse: 16.4305
+EPOCH:47/200,Loss D:0.003961, Time 37m 4s
+-- Iter:1880,Loss:TOTAL:0.003898,G: 0.003654,Q: 1.922755,Class:56.25,lr:[0.0001]
+[epoch 48][9/39] mae: 0.0037 rmse: 12.9221
+-- Iter:1900,Loss:TOTAL:0.003394,G: 0.003224,Q: 1.192827,Class:100.0,lr:[0.0001]
+[epoch 48][29/39] mae: 0.0032 rmse: 15.2717
+EPOCH:48/200,Loss D:0.003254, Time 37m 49s
+-- Iter:1920,Loss:TOTAL:0.003071,G: 0.002816,Q: 2.401164,Class:81.25,lr:[0.0001]
+[epoch 49][10/39] mae: 0.0028 rmse: 11.2883
+-- Iter:1940,Loss:TOTAL:0.002502,G: 0.002315,Q: 1.619333,Class:87.5,lr:[0.0001]
+[epoch 49][30/39] mae: 0.0023 rmse: 9.7688
+EPOCH:49/200,Loss D:0.003682, Time 38m 37s
+-- Iter:1960,Loss:TOTAL:0.002537,G: 0.002360,Q: 1.433721,Class:81.25,lr:[1e-05]
+[epoch 50][11/39] mae: 0.0024 rmse: 8.8870
+-- Iter:1980,Loss:TOTAL:0.003332,G: 0.003083,Q: 2.281558,Class:87.5,lr:[1e-05]
+[epoch 50][31/39] mae: 0.0031 rmse: 13.8779
+EPOCH:50/200,Loss D:0.002671, Time 39m 25s
+-- Iter:2000,Loss:TOTAL:0.002848,G: 0.002671,Q: 1.442073,Class:75.0,lr:[1e-05]
+[epoch 51][12/39] mae: 0.0027 rmse: 15.7474
+-- Iter:2020,Loss:TOTAL:0.002448,G: 0.002264,Q: 1.320747,Class:81.25,lr:[1e-05]
+[epoch 51][32/39] mae: 0.0023 rmse: 8.9258
+EPOCH:51/200,Loss D:0.004364, Time 40m 10s
+-- Iter:2040,Loss:TOTAL:0.003680,G: 0.003415,Q: 2.099732,Class:87.5,lr:[1e-05]
+[epoch 52][13/39] mae: 0.0034 rmse: 14.8879
+-- Iter:2060,Loss:TOTAL:0.002060,G: 0.001900,Q: 1.247188,Class:87.5,lr:[1e-05]
+[epoch 52][33/39] mae: 0.0019 rmse: 8.5214
+EPOCH:52/200,Loss D:0.003329, Time 40m 55s
+-- Iter:2080,Loss:TOTAL:0.002844,G: 0.002761,Q: 0.802341,Class:87.5,lr:[1e-05]
+[epoch 53][14/39] mae: 0.0028 rmse: 13.4060
+-- Iter:2100,Loss:TOTAL:0.003626,G: 0.003502,Q: 0.954288,Class:75.0,lr:[1e-05]
+[epoch 53][34/39] mae: 0.0035 rmse: 17.8809
+EPOCH:53/200,Loss D:0.003437, Time 41m 40s
+-- Iter:2120,Loss:TOTAL:0.001778,G: 0.001641,Q: 0.914843,Class:75.0,lr:[1e-05]
+[epoch 54][15/39] mae: 0.0016 rmse: 5.8646
+-- Iter:2140,Loss:TOTAL:0.002889,G: 0.002769,Q: 0.965982,Class:100.0,lr:[1e-05]
+[epoch 54][35/39] mae: 0.0028 rmse: 11.9456
+EPOCH:54/200,Loss D:0.002614, Time 42m 25s
+-- Iter:2160,Loss:TOTAL:0.003237,G: 0.003091,Q: 1.458266,Class:68.75,lr:[1e-05]
+[epoch 55][16/39] mae: 0.0031 rmse: 12.8410
+-- Iter:2180,Loss:TOTAL:0.003380,G: 0.003211,Q: 1.590237,Class:87.5,lr:[1e-05]
+[epoch 55][36/39] mae: 0.0032 rmse: 12.9457
+EPOCH:55/200,Loss D:0.002536, Time 43m 10s
+-- Iter:2200,Loss:TOTAL:0.001985,G: 0.001822,Q: 1.435893,Class:93.75,lr:[1e-05]
+[epoch 56][17/39] mae: 0.0018 rmse: 7.5218
+-- Iter:2220,Loss:TOTAL:0.004058,G: 0.003890,Q: 1.467295,Class:100.0,lr:[1e-05]
+[epoch 56][37/39] mae: 0.0039 rmse: 16.1976
+EPOCH:56/200,Loss D:0.003303, Time 43m 57s
+-- Iter:2240,Loss:TOTAL:0.003550,G: 0.003324,Q: 1.674536,Class:62.5,lr:[1e-05]
+[epoch 57][18/39] mae: 0.0033 rmse: 15.4015
+-- Iter:2260,Loss:TOTAL:0.001836,G: 0.001661,Q: 1.584892,Class:68.75,lr:[1e-05]
+[epoch 57][38/39] mae: 0.0017 rmse: 5.2273
+EPOCH:57/200,Loss D:0.002523, Time 44m 47s
+-- Iter:2280,Loss:TOTAL:0.003484,G: 0.003284,Q: 1.829694,Class:81.25,lr:[1e-05]
+[epoch 58][19/39] mae: 0.0033 rmse: 16.8975
+-- Iter:2300,Loss:TOTAL:0.003881,G: 0.003687,Q: 1.634897,Class:75.0,lr:[1e-05]
+[epoch 58][39/39] mae: 0.0037 rmse: 15.6923
+EPOCH:58/200,Loss D:0.003881, Time 45m 33s
+-- Iter:2320,Loss:TOTAL:0.002743,G: 0.002556,Q: 1.402315,Class:81.25,lr:[1e-05]
+[epoch 59][20/39] mae: 0.0026 rmse: 11.6191
+EPOCH:59/200,Loss D:0.003092, Time 46m 18s
+-- Iter:2340,Loss:TOTAL:0.002493,G: 0.002262,Q: 2.159374,Class:93.75,lr:[1e-05]
+[epoch 60][1/39] mae: 0.0023 rmse: 9.8097
+-- Iter:2360,Loss:TOTAL:0.003929,G: 0.003781,Q: 1.287816,Class:87.5,lr:[1e-05]
+[epoch 60][21/39] mae: 0.0038 rmse: 18.8962
+EPOCH:60/200,Loss D:0.003396, Time 47m 5s
+-- Iter:2380,Loss:TOTAL:0.003832,G: 0.003572,Q: 2.152934,Class:87.5,lr:[1e-05]
+[epoch 61][2/39] mae: 0.0036 rmse: 15.8719
+-- Iter:2400,Loss:TOTAL:0.003472,G: 0.003264,Q: 2.062495,Class:75.0,lr:[1e-05]
+[epoch 61][22/39] mae: 0.0033 rmse: 16.3251
+EPOCH:61/200,Loss D:0.002986, Time 47m 50s
+-- Iter:2420,Loss:TOTAL:0.003992,G: 0.003847,Q: 1.277441,Class:100.0,lr:[1e-05]
+[epoch 62][3/39] mae: 0.0038 rmse: 19.0961
+-- Iter:2440,Loss:TOTAL:0.003544,G: 0.003313,Q: 1.993915,Class:87.5,lr:[1e-05]
+[epoch 62][23/39] mae: 0.0033 rmse: 14.9264
+EPOCH:62/200,Loss D:0.002237, Time 48m 36s
+-- Iter:2460,Loss:TOTAL:0.003130,G: 0.003003,Q: 0.972480,Class:87.5,lr:[1e-05]
+[epoch 63][4/39] mae: 0.0030 rmse: 13.2138
+-- Iter:2480,Loss:TOTAL:0.003019,G: 0.002921,Q: 0.910712,Class:93.75,lr:[1e-05]
+[epoch 63][24/39] mae: 0.0029 rmse: 13.1803
+EPOCH:63/200,Loss D:0.003673, Time 49m 21s
+-- Iter:2500,Loss:TOTAL:0.002606,G: 0.002370,Q: 2.141986,Class:93.75,lr:[1e-05]
+[epoch 64][5/39] mae: 0.0024 rmse: 9.6214
+-- Iter:2520,Loss:TOTAL:0.004213,G: 0.004064,Q: 1.322313,Class:81.25,lr:[1e-05]
+[epoch 64][25/39] mae: 0.0041 rmse: 17.1290
+EPOCH:64/200,Loss D:0.002798, Time 50m 8s
+-- Iter:2540,Loss:TOTAL:0.002373,G: 0.002201,Q: 1.682916,Class:87.5,lr:[1e-05]
+[epoch 65][6/39] mae: 0.0022 rmse: 9.4867
+-- Iter:2560,Loss:TOTAL:0.003280,G: 0.003154,Q: 1.190489,Class:87.5,lr:[1e-05]
+[epoch 65][26/39] mae: 0.0032 rmse: 13.8301
+EPOCH:65/200,Loss D:0.004007, Time 50m 55s
+-- Iter:2580,Loss:TOTAL:0.003254,G: 0.003050,Q: 1.743672,Class:56.25,lr:[1e-05]
+[epoch 66][7/39] mae: 0.0031 rmse: 15.9844
+-- Iter:2600,Loss:TOTAL:0.003906,G: 0.003707,Q: 1.616697,Class:93.75,lr:[1e-05]
+[epoch 66][27/39] mae: 0.0037 rmse: 19.4755
+EPOCH:66/200,Loss D:0.002334, Time 51m 43s
+-- Iter:2620,Loss:TOTAL:0.002483,G: 0.002353,Q: 1.278933,Class:93.75,lr:[1e-05]
+[epoch 67][8/39] mae: 0.0024 rmse: 10.8806
+-- Iter:2640,Loss:TOTAL:0.002804,G: 0.002601,Q: 1.700798,Class:93.75,lr:[1e-05]
+[epoch 67][28/39] mae: 0.0026 rmse: 13.0366
+EPOCH:67/200,Loss D:0.002724, Time 52m 30s
+-- Iter:2660,Loss:TOTAL:0.003360,G: 0.003204,Q: 1.511596,Class:75.0,lr:[1e-05]
+[epoch 68][9/39] mae: 0.0032 rmse: 12.9158
+-- Iter:2680,Loss:TOTAL:0.003136,G: 0.002975,Q: 1.493338,Class:87.5,lr:[1e-05]
+[epoch 68][29/39] mae: 0.0030 rmse: 13.4140
+EPOCH:68/200,Loss D:0.002588, Time 53m 17s
+-- Iter:2700,Loss:TOTAL:0.002770,G: 0.002619,Q: 1.331696,Class:81.25,lr:[1e-05]
+[epoch 69][10/39] mae: 0.0026 rmse: 12.2481
+-- Iter:2720,Loss:TOTAL:0.002845,G: 0.002623,Q: 1.935889,Class:81.25,lr:[1e-05]
+[epoch 69][30/39] mae: 0.0026 rmse: 11.0316
+EPOCH:69/200,Loss D:0.002688, Time 54m 4s
+-- Iter:2740,Loss:TOTAL:0.003180,G: 0.002984,Q: 1.389683,Class:93.75,lr:[1e-05]
+[epoch 70][11/39] mae: 0.0030 rmse: 14.7622
+-- Iter:2760,Loss:TOTAL:0.002539,G: 0.002417,Q: 1.008967,Class:87.5,lr:[1e-05]
+[epoch 70][31/39] mae: 0.0024 rmse: 9.2054
+EPOCH:70/200,Loss D:0.003175, Time 54m 51s
+-- Iter:2780,Loss:TOTAL:0.004046,G: 0.003889,Q: 1.502008,Class:81.25,lr:[1e-05]
+[epoch 71][12/39] mae: 0.0039 rmse: 18.8224
+-- Iter:2800,Loss:TOTAL:0.003675,G: 0.003494,Q: 1.524944,Class:100.0,lr:[1e-05]
+[epoch 71][32/39] mae: 0.0035 rmse: 19.0302
+EPOCH:71/200,Loss D:0.002375, Time 55m 37s
+-- Iter:2820,Loss:TOTAL:0.003386,G: 0.003223,Q: 1.585032,Class:81.25,lr:[1e-05]
+[epoch 72][13/39] mae: 0.0032 rmse: 13.2838
+-- Iter:2840,Loss:TOTAL:0.003621,G: 0.003431,Q: 1.407409,Class:87.5,lr:[1e-05]
+[epoch 72][33/39] mae: 0.0034 rmse: 16.9442
+EPOCH:72/200,Loss D:0.003111, Time 56m 24s
+-- Iter:2860,Loss:TOTAL:0.002525,G: 0.002332,Q: 1.637537,Class:93.75,lr:[1e-05]
+[epoch 73][14/39] mae: 0.0023 rmse: 10.7183
+-- Iter:2880,Loss:TOTAL:0.003934,G: 0.003743,Q: 1.346736,Class:68.75,lr:[1e-05]
+[epoch 73][34/39] mae: 0.0037 rmse: 17.8577
+EPOCH:73/200,Loss D:0.003191, Time 57m 12s
+-- Iter:2900,Loss:TOTAL:0.003157,G: 0.002974,Q: 1.566535,Class:100.0,lr:[1e-05]
+[epoch 74][15/39] mae: 0.0030 rmse: 13.3848
+-- Iter:2920,Loss:TOTAL:0.002437,G: 0.002281,Q: 1.362441,Class:93.75,lr:[1e-05]
+[epoch 74][35/39] mae: 0.0023 rmse: 8.4174
+EPOCH:74/200,Loss D:0.003363, Time 57m 59s
+-- Iter:2940,Loss:TOTAL:0.002417,G: 0.002295,Q: 1.181859,Class:87.5,lr:[1e-05]
+[epoch 75][16/39] mae: 0.0023 rmse: 10.2183
+-- Iter:2960,Loss:TOTAL:0.004310,G: 0.004131,Q: 1.741488,Class:81.25,lr:[1e-05]
+[epoch 75][36/39] mae: 0.0041 rmse: 18.2744
+EPOCH:75/200,Loss D:0.002602, Time 58m 46s
+-- Iter:2980,Loss:TOTAL:0.001967,G: 0.001868,Q: 0.867972,Class:87.5,lr:[1e-05]
+[epoch 76][17/39] mae: 0.0019 rmse: 7.3723
+-- Iter:3000,Loss:TOTAL:0.002744,G: 0.002633,Q: 0.878937,Class:93.75,lr:[1e-05]
+[epoch 76][37/39] mae: 0.0026 rmse: 12.3915
+EPOCH:76/200,Loss D:0.002583, Time 59m 33s
+-- Iter:3020,Loss:TOTAL:0.003208,G: 0.003079,Q: 1.072230,Class:93.75,lr:[1e-05]
+[epoch 77][18/39] mae: 0.0031 rmse: 16.3969
+-- Iter:3040,Loss:TOTAL:0.002377,G: 0.002259,Q: 0.879138,Class:93.75,lr:[1e-05]
+[epoch 77][38/39] mae: 0.0023 rmse: 9.6183
+EPOCH:77/200,Loss D:0.002681, Time 60m 20s
+-- Iter:3060,Loss:TOTAL:0.002432,G: 0.002235,Q: 1.714008,Class:93.75,lr:[1e-05]
+[epoch 78][19/39] mae: 0.0022 rmse: 9.3827
+-- Iter:3080,Loss:TOTAL:0.003250,G: 0.003040,Q: 1.567951,Class:81.25,lr:[1e-05]
+[epoch 78][39/39] mae: 0.0030 rmse: 13.5947
+EPOCH:78/200,Loss D:0.003250, Time 61m 8s
+-- Iter:3100,Loss:TOTAL:0.002669,G: 0.002487,Q: 1.660447,Class:62.5,lr:[1e-05]
+[epoch 79][20/39] mae: 0.0025 rmse: 14.3619
+EPOCH:79/200,Loss D:0.003328, Time 61m 54s
+-- Iter:3120,Loss:TOTAL:0.002807,G: 0.002653,Q: 1.100778,Class:93.75,lr:[1e-05]
+[epoch 80][1/39] mae: 0.0027 rmse: 10.6485
+-- Iter:3140,Loss:TOTAL:0.002204,G: 0.002040,Q: 0.947389,Class:87.5,lr:[1e-05]
+[epoch 80][21/39] mae: 0.0020 rmse: 7.9786
+EPOCH:80/200,Loss D:0.002556, Time 62m 42s
+-- Iter:3160,Loss:TOTAL:0.002906,G: 0.002777,Q: 0.817379,Class:93.75,lr:[1e-05]
+[epoch 81][2/39] mae: 0.0028 rmse: 12.2025
+-- Iter:3180,Loss:TOTAL:0.003321,G: 0.003226,Q: 0.897605,Class:93.75,lr:[1e-05]
+[epoch 81][22/39] mae: 0.0032 rmse: 13.3422
+EPOCH:81/200,Loss D:0.002287, Time 63m 29s
+-- Iter:3200,Loss:TOTAL:0.002840,G: 0.002717,Q: 0.997935,Class:100.0,lr:[1e-05]
+[epoch 82][3/39] mae: 0.0027 rmse: 11.3786
+-- Iter:3220,Loss:TOTAL:0.003644,G: 0.003386,Q: 2.119870,Class:75.0,lr:[1e-05]
+[epoch 82][23/39] mae: 0.0034 rmse: 16.6507
+EPOCH:82/200,Loss D:0.003102, Time 64m 16s
+-- Iter:3240,Loss:TOTAL:0.003142,G: 0.002946,Q: 1.608146,Class:87.5,lr:[1e-05]
+[epoch 83][4/39] mae: 0.0029 rmse: 13.4729
+-- Iter:3260,Loss:TOTAL:0.003532,G: 0.003369,Q: 1.497604,Class:93.75,lr:[1e-05]
+[epoch 83][24/39] mae: 0.0034 rmse: 14.8733
+EPOCH:83/200,Loss D:0.002571, Time 65m 2s
+-- Iter:3280,Loss:TOTAL:0.003452,G: 0.003280,Q: 1.238349,Class:100.0,lr:[1e-05]
+[epoch 84][5/39] mae: 0.0033 rmse: 17.8174
+-- Iter:3300,Loss:TOTAL:0.004460,G: 0.004248,Q: 1.713713,Class:87.5,lr:[1e-05]
+[epoch 84][25/39] mae: 0.0042 rmse: 19.8950
+EPOCH:84/200,Loss D:0.003281, Time 65m 49s
+-- Iter:3320,Loss:TOTAL:0.002631,G: 0.002462,Q: 1.442812,Class:100.0,lr:[1e-05]
+[epoch 85][6/39] mae: 0.0025 rmse: 11.0671
+-- Iter:3340,Loss:TOTAL:0.003009,G: 0.002773,Q: 1.870399,Class:93.75,lr:[1e-05]
+[epoch 85][26/39] mae: 0.0028 rmse: 13.4096
+EPOCH:85/200,Loss D:0.003198, Time 66m 36s
+-- Iter:3360,Loss:TOTAL:0.003951,G: 0.003821,Q: 1.216032,Class:87.5,lr:[1e-05]
+[epoch 86][7/39] mae: 0.0038 rmse: 18.6134
+-- Iter:3380,Loss:TOTAL:0.003308,G: 0.003140,Q: 1.389139,Class:87.5,lr:[1e-05]
+[epoch 86][27/39] mae: 0.0031 rmse: 16.5772
+EPOCH:86/200,Loss D:0.003003, Time 67m 23s
+-- Iter:3400,Loss:TOTAL:0.004196,G: 0.004031,Q: 1.466066,Class:93.75,lr:[1e-05]
+[epoch 87][8/39] mae: 0.0040 rmse: 19.6659
+-- Iter:3420,Loss:TOTAL:0.002373,G: 0.002189,Q: 1.700089,Class:68.75,lr:[1e-05]
+[epoch 87][28/39] mae: 0.0022 rmse: 7.2071
+EPOCH:87/200,Loss D:0.002678, Time 68m 10s
+-- Iter:3440,Loss:TOTAL:0.003199,G: 0.003081,Q: 0.888414,Class:87.5,lr:[1e-05]
+[epoch 88][9/39] mae: 0.0031 rmse: 15.4295
+-- Iter:3460,Loss:TOTAL:0.003156,G: 0.003035,Q: 1.154353,Class:93.75,lr:[1e-05]
+[epoch 88][29/39] mae: 0.0030 rmse: 12.1956
+EPOCH:88/200,Loss D:0.002643, Time 68m 57s
+-- Iter:3480,Loss:TOTAL:0.003301,G: 0.003120,Q: 1.604425,Class:87.5,lr:[1e-05]
+[epoch 89][10/39] mae: 0.0031 rmse: 16.1648
+-- Iter:3500,Loss:TOTAL:0.002920,G: 0.002741,Q: 1.715061,Class:93.75,lr:[1e-05]
+[epoch 89][30/39] mae: 0.0027 rmse: 13.0893
+EPOCH:89/200,Loss D:0.001839, Time 69m 44s
+-- Iter:3520,Loss:TOTAL:0.002423,G: 0.002263,Q: 1.332217,Class:87.5,lr:[1e-05]
+[epoch 90][11/39] mae: 0.0023 rmse: 9.6460
+-- Iter:3540,Loss:TOTAL:0.003492,G: 0.003290,Q: 1.899595,Class:81.25,lr:[1e-05]
+[epoch 90][31/39] mae: 0.0033 rmse: 13.3297
+EPOCH:90/200,Loss D:0.003190, Time 70m 32s
+-- Iter:3560,Loss:TOTAL:0.002966,G: 0.002801,Q: 1.369400,Class:100.0,lr:[1e-05]
+[epoch 91][12/39] mae: 0.0028 rmse: 12.2212
+-- Iter:3580,Loss:TOTAL:0.003772,G: 0.003595,Q: 1.624042,Class:81.25,lr:[1e-05]
+[epoch 91][32/39] mae: 0.0036 rmse: 15.3769
+EPOCH:91/200,Loss D:0.003772, Time 71m 18s
+-- Iter:3600,Loss:TOTAL:0.004009,G: 0.003853,Q: 1.294620,Class:100.0,lr:[1e-05]
+[epoch 92][13/39] mae: 0.0039 rmse: 19.7790
+-- Iter:3620,Loss:TOTAL:0.002967,G: 0.002810,Q: 1.260316,Class:93.75,lr:[1e-05]
+[epoch 92][33/39] mae: 0.0028 rmse: 12.2924
+EPOCH:92/200,Loss D:0.002324, Time 72m 5s
+-- Iter:3640,Loss:TOTAL:0.002522,G: 0.002365,Q: 1.390701,Class:68.75,lr:[1e-05]
+[epoch 93][14/39] mae: 0.0024 rmse: 9.1331
+-- Iter:3660,Loss:TOTAL:0.003479,G: 0.003284,Q: 1.824822,Class:81.25,lr:[1e-05]
+[epoch 93][34/39] mae: 0.0033 rmse: 15.3472
+EPOCH:93/200,Loss D:0.002916, Time 72m 52s
+-- Iter:3680,Loss:TOTAL:0.002336,G: 0.002204,Q: 1.049267,Class:87.5,lr:[1e-05]
+[epoch 94][15/39] mae: 0.0022 rmse: 9.5990
+-- Iter:3700,Loss:TOTAL:0.002648,G: 0.002503,Q: 1.123394,Class:93.75,lr:[1e-05]
+[epoch 94][35/39] mae: 0.0025 rmse: 10.4119
+EPOCH:94/200,Loss D:0.004568, Time 73m 39s
+-- Iter:3720,Loss:TOTAL:0.002587,G: 0.002509,Q: 0.732201,Class:93.75,lr:[1e-05]
+[epoch 95][16/39] mae: 0.0025 rmse: 10.2903
+-- Iter:3740,Loss:TOTAL:0.002699,G: 0.002597,Q: 0.820044,Class:93.75,lr:[1e-05]
+[epoch 95][36/39] mae: 0.0026 rmse: 11.3248
+EPOCH:95/200,Loss D:0.002174, Time 74m 25s
+-- Iter:3760,Loss:TOTAL:0.003394,G: 0.003216,Q: 1.445885,Class:93.75,lr:[1e-05]
+[epoch 96][17/39] mae: 0.0032 rmse: 16.0496
+-- Iter:3780,Loss:TOTAL:0.002864,G: 0.002680,Q: 1.586889,Class:93.75,lr:[1e-05]
+[epoch 96][37/39] mae: 0.0027 rmse: 12.1401
+EPOCH:96/200,Loss D:0.003052, Time 75m 12s
+-- Iter:3800,Loss:TOTAL:0.001907,G: 0.001715,Q: 1.374566,Class:100.0,lr:[1e-05]
+[epoch 97][18/39] mae: 0.0017 rmse: 5.7177
+-- Iter:3820,Loss:TOTAL:0.004225,G: 0.004092,Q: 1.283104,Class:93.75,lr:[1e-05]
+[epoch 97][38/39] mae: 0.0041 rmse: 17.5558
+EPOCH:97/200,Loss D:0.002652, Time 75m 58s
+-- Iter:3840,Loss:TOTAL:0.003330,G: 0.003157,Q: 1.309953,Class:100.0,lr:[1e-05]
+[epoch 98][19/39] mae: 0.0032 rmse: 14.1948
+-- Iter:3860,Loss:TOTAL:0.002431,G: 0.002278,Q: 1.088269,Class:87.5,lr:[1e-05]
+[epoch 98][39/39] mae: 0.0023 rmse: 8.9586
+EPOCH:98/200,Loss D:0.002431, Time 76m 45s
+-- Iter:3880,Loss:TOTAL:0.003266,G: 0.003130,Q: 1.194577,Class:87.5,lr:[1e-05]
+[epoch 99][20/39] mae: 0.0031 rmse: 14.4944
+EPOCH:99/200,Loss D:0.004225, Time 77m 32s
+-- Iter:3900,Loss:TOTAL:0.003422,G: 0.003271,Q: 1.150933,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 100][1/39] mae: 0.0033 rmse: 17.0275
+-- Iter:3920,Loss:TOTAL:0.002706,G: 0.002586,Q: 0.825737,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 100][21/39] mae: 0.0026 rmse: 11.2727
+EPOCH:100/200,Loss D:0.001715, Time 78m 19s
+-- Iter:3940,Loss:TOTAL:0.002406,G: 0.002288,Q: 0.968049,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 101][2/39] mae: 0.0023 rmse: 10.4389
+-- Iter:3960,Loss:TOTAL:0.003837,G: 0.003687,Q: 1.357225,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 101][22/39] mae: 0.0037 rmse: 16.8826
+EPOCH:101/200,Loss D:0.003469, Time 79m 5s
+-- Iter:3980,Loss:TOTAL:0.002096,G: 0.001936,Q: 1.418871,Class:75.0,lr:[1.0000000000000002e-06]
+[epoch 102][3/39] mae: 0.0019 rmse: 6.6944
+-- Iter:4000,Loss:TOTAL:0.003113,G: 0.002992,Q: 1.042596,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 102][23/39] mae: 0.0030 rmse: 12.9685
+EPOCH:102/200,Loss D:0.003735, Time 79m 52s
+-- Iter:4020,Loss:TOTAL:0.002966,G: 0.002784,Q: 1.146677,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 103][4/39] mae: 0.0028 rmse: 14.2574
+-- Iter:4040,Loss:TOTAL:0.003338,G: 0.003170,Q: 1.084856,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 103][24/39] mae: 0.0032 rmse: 16.4918
+EPOCH:103/200,Loss D:0.002266, Time 80m 39s
+-- Iter:4060,Loss:TOTAL:0.002285,G: 0.002127,Q: 1.501935,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 104][5/39] mae: 0.0021 rmse: 7.8659
+-- Iter:4080,Loss:TOTAL:0.002516,G: 0.002405,Q: 0.840676,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 104][25/39] mae: 0.0024 rmse: 9.9075
+EPOCH:104/200,Loss D:0.003117, Time 81m 25s
+-- Iter:4100,Loss:TOTAL:0.002359,G: 0.002135,Q: 1.859082,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 105][6/39] mae: 0.0021 rmse: 8.7139
+-- Iter:4120,Loss:TOTAL:0.003547,G: 0.003427,Q: 1.040328,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 105][26/39] mae: 0.0034 rmse: 15.6277
+EPOCH:105/200,Loss D:0.003643, Time 82m 12s
+-- Iter:4140,Loss:TOTAL:0.002776,G: 0.002653,Q: 0.830993,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 106][7/39] mae: 0.0027 rmse: 12.0848
+-- Iter:4160,Loss:TOTAL:0.002707,G: 0.002570,Q: 1.203913,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 106][27/39] mae: 0.0026 rmse: 11.6966
+EPOCH:106/200,Loss D:0.003519, Time 82m 58s
+-- Iter:4180,Loss:TOTAL:0.002354,G: 0.002227,Q: 1.038899,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 107][8/39] mae: 0.0022 rmse: 9.2468
+-- Iter:4200,Loss:TOTAL:0.004494,G: 0.004310,Q: 1.532633,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 107][28/39] mae: 0.0043 rmse: 22.1119
+EPOCH:107/200,Loss D:0.003046, Time 83m 45s
+-- Iter:4220,Loss:TOTAL:0.003777,G: 0.003643,Q: 1.253481,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 108][9/39] mae: 0.0036 rmse: 17.9390
+-- Iter:4240,Loss:TOTAL:0.002254,G: 0.002113,Q: 1.158476,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 108][29/39] mae: 0.0021 rmse: 9.5073
+EPOCH:108/200,Loss D:0.003128, Time 84m 32s
+-- Iter:4260,Loss:TOTAL:0.002208,G: 0.002046,Q: 1.546033,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 109][10/39] mae: 0.0020 rmse: 10.2719
+-- Iter:4280,Loss:TOTAL:0.003116,G: 0.002980,Q: 1.065019,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 109][30/39] mae: 0.0030 rmse: 16.4329
+EPOCH:109/200,Loss D:0.003024, Time 85m 18s
+-- Iter:4300,Loss:TOTAL:0.002293,G: 0.002185,Q: 0.805073,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 110][11/39] mae: 0.0022 rmse: 9.2188
+-- Iter:4320,Loss:TOTAL:0.002767,G: 0.002594,Q: 1.398295,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 110][31/39] mae: 0.0026 rmse: 11.6083
+EPOCH:110/200,Loss D:0.003213, Time 86m 5s
+-- Iter:4340,Loss:TOTAL:0.002279,G: 0.002114,Q: 1.471030,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 111][12/39] mae: 0.0021 rmse: 10.8231
+-- Iter:4360,Loss:TOTAL:0.003420,G: 0.003289,Q: 0.901465,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 111][32/39] mae: 0.0033 rmse: 16.7255
+EPOCH:111/200,Loss D:0.002756, Time 86m 51s
+-- Iter:4380,Loss:TOTAL:0.003971,G: 0.003874,Q: 0.921568,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 112][13/39] mae: 0.0039 rmse: 19.7072
+-- Iter:4400,Loss:TOTAL:0.003174,G: 0.002981,Q: 1.432396,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 112][33/39] mae: 0.0030 rmse: 16.1768
+EPOCH:112/200,Loss D:0.003608, Time 87m 38s
+-- Iter:4420,Loss:TOTAL:0.001967,G: 0.001830,Q: 1.119839,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 113][14/39] mae: 0.0018 rmse: 7.3651
+-- Iter:4440,Loss:TOTAL:0.003549,G: 0.003398,Q: 1.282372,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 113][34/39] mae: 0.0034 rmse: 15.2063
+EPOCH:113/200,Loss D:0.002219, Time 88m 24s
+-- Iter:4460,Loss:TOTAL:0.003181,G: 0.003026,Q: 1.246153,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 114][15/39] mae: 0.0030 rmse: 16.5065
+-- Iter:4480,Loss:TOTAL:0.003385,G: 0.003105,Q: 2.409556,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 114][35/39] mae: 0.0031 rmse: 13.5742
+EPOCH:114/200,Loss D:0.002218, Time 89m 10s
+-- Iter:4500,Loss:TOTAL:0.003677,G: 0.003509,Q: 1.365720,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 115][16/39] mae: 0.0035 rmse: 17.6897
+-- Iter:4520,Loss:TOTAL:0.002698,G: 0.002516,Q: 1.581052,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 115][36/39] mae: 0.0025 rmse: 11.4111
+EPOCH:115/200,Loss D:0.004747, Time 89m 57s
+-- Iter:4540,Loss:TOTAL:0.002330,G: 0.002165,Q: 1.262621,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 116][17/39] mae: 0.0022 rmse: 11.1330
+-- Iter:4560,Loss:TOTAL:0.003056,G: 0.002974,Q: 0.648236,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 116][37/39] mae: 0.0030 rmse: 13.9444
+EPOCH:116/200,Loss D:0.003159, Time 90m 43s
+-- Iter:4580,Loss:TOTAL:0.002681,G: 0.002532,Q: 1.276412,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 117][18/39] mae: 0.0025 rmse: 14.0436
+-- Iter:4600,Loss:TOTAL:0.003489,G: 0.003206,Q: 2.435975,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 117][38/39] mae: 0.0032 rmse: 14.3800
+EPOCH:117/200,Loss D:0.003191, Time 91m 30s
+-- Iter:4620,Loss:TOTAL:0.003851,G: 0.003721,Q: 1.207474,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 118][19/39] mae: 0.0037 rmse: 18.3188
+-- Iter:4640,Loss:TOTAL:0.002478,G: 0.002394,Q: 0.746498,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 118][39/39] mae: 0.0024 rmse: 12.3552
+EPOCH:118/200,Loss D:0.002478, Time 92m 17s
+-- Iter:4660,Loss:TOTAL:0.002260,G: 0.002162,Q: 0.641612,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 119][20/39] mae: 0.0022 rmse: 8.4708
+EPOCH:119/200,Loss D:0.003213, Time 93m 4s
+-- Iter:4680,Loss:TOTAL:0.002361,G: 0.002192,Q: 1.334468,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 120][1/39] mae: 0.0022 rmse: 7.7608
+-- Iter:4700,Loss:TOTAL:0.002972,G: 0.002810,Q: 1.075509,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 120][21/39] mae: 0.0028 rmse: 12.4411
+EPOCH:120/200,Loss D:0.002671, Time 93m 52s
+-- Iter:4720,Loss:TOTAL:0.002881,G: 0.002780,Q: 0.872812,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 121][2/39] mae: 0.0028 rmse: 11.1132
+-- Iter:4740,Loss:TOTAL:0.004556,G: 0.004408,Q: 1.183303,Class:75.0,lr:[1.0000000000000002e-06]
+[epoch 121][22/39] mae: 0.0044 rmse: 21.0017
+EPOCH:121/200,Loss D:0.002295, Time 94m 38s
+-- Iter:4760,Loss:TOTAL:0.002807,G: 0.002666,Q: 1.103086,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 122][3/39] mae: 0.0027 rmse: 13.9591
+-- Iter:4780,Loss:TOTAL:0.003482,G: 0.003295,Q: 1.639065,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 122][23/39] mae: 0.0033 rmse: 14.4608
+EPOCH:122/200,Loss D:0.002877, Time 95m 25s
+-- Iter:4800,Loss:TOTAL:0.003528,G: 0.003371,Q: 1.197049,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 123][4/39] mae: 0.0034 rmse: 14.6948
+-- Iter:4820,Loss:TOTAL:0.004029,G: 0.003856,Q: 1.583502,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 123][24/39] mae: 0.0039 rmse: 18.1163
+EPOCH:123/200,Loss D:0.002799, Time 96m 12s
+-- Iter:4840,Loss:TOTAL:0.003521,G: 0.003319,Q: 1.815147,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 124][5/39] mae: 0.0033 rmse: 15.4523
+-- Iter:4860,Loss:TOTAL:0.003238,G: 0.003114,Q: 0.752716,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 124][25/39] mae: 0.0031 rmse: 14.4066
+EPOCH:124/200,Loss D:0.002946, Time 96m 59s
+-- Iter:4880,Loss:TOTAL:0.004854,G: 0.004632,Q: 2.173680,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 125][6/39] mae: 0.0046 rmse: 19.6589
+-- Iter:4900,Loss:TOTAL:0.002828,G: 0.002690,Q: 1.156537,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 125][26/39] mae: 0.0027 rmse: 11.8274
+EPOCH:125/200,Loss D:0.004035, Time 97m 46s
+-- Iter:4920,Loss:TOTAL:0.002407,G: 0.002253,Q: 1.340843,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 126][7/39] mae: 0.0023 rmse: 8.8787
+-- Iter:4940,Loss:TOTAL:0.002191,G: 0.002035,Q: 0.943706,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 126][27/39] mae: 0.0020 rmse: 9.1449
+EPOCH:126/200,Loss D:0.003492, Time 98m 32s
+-- Iter:4960,Loss:TOTAL:0.002079,G: 0.002005,Q: 0.659699,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 127][8/39] mae: 0.0020 rmse: 8.9011
+-- Iter:4980,Loss:TOTAL:0.004718,G: 0.004586,Q: 1.070212,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 127][28/39] mae: 0.0046 rmse: 21.2088
+EPOCH:127/200,Loss D:0.003673, Time 99m 19s
+-- Iter:5000,Loss:TOTAL:0.004032,G: 0.003876,Q: 1.436559,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 128][9/39] mae: 0.0039 rmse: 18.2970
+-- Iter:5020,Loss:TOTAL:0.003114,G: 0.003032,Q: 0.742826,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 128][29/39] mae: 0.0030 rmse: 13.1261
+EPOCH:128/200,Loss D:0.003991, Time 100m 6s
+-- Iter:5040,Loss:TOTAL:0.004184,G: 0.004061,Q: 0.967662,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 129][10/39] mae: 0.0041 rmse: 19.4976
+-- Iter:5060,Loss:TOTAL:0.002792,G: 0.002662,Q: 1.209234,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 129][30/39] mae: 0.0027 rmse: 13.1220
+EPOCH:129/200,Loss D:0.002244, Time 100m 53s
+-- Iter:5080,Loss:TOTAL:0.002470,G: 0.002269,Q: 1.569311,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 130][11/39] mae: 0.0023 rmse: 8.7918
+-- Iter:5100,Loss:TOTAL:0.002434,G: 0.002289,Q: 1.052481,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 130][31/39] mae: 0.0023 rmse: 9.4389
+EPOCH:130/200,Loss D:0.003340, Time 101m 40s
+-- Iter:5120,Loss:TOTAL:0.004147,G: 0.004009,Q: 1.200575,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 131][12/39] mae: 0.0040 rmse: 22.4271
+-- Iter:5140,Loss:TOTAL:0.003921,G: 0.003742,Q: 1.582464,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 131][32/39] mae: 0.0037 rmse: 17.1977
+EPOCH:131/200,Loss D:0.002956, Time 102m 27s
+-- Iter:5160,Loss:TOTAL:0.003019,G: 0.002874,Q: 1.331629,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 132][13/39] mae: 0.0029 rmse: 12.9843
+-- Iter:5180,Loss:TOTAL:0.003488,G: 0.003306,Q: 1.583531,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 132][33/39] mae: 0.0033 rmse: 14.3086
+EPOCH:132/200,Loss D:0.003142, Time 103m 15s
+-- Iter:5200,Loss:TOTAL:0.002879,G: 0.002712,Q: 1.303710,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 133][14/39] mae: 0.0027 rmse: 13.3907
+-- Iter:5220,Loss:TOTAL:0.002621,G: 0.002377,Q: 2.176345,Class:68.75,lr:[1.0000000000000002e-06]
+[epoch 133][34/39] mae: 0.0024 rmse: 11.0282
+EPOCH:133/200,Loss D:0.003782, Time 104m 1s
+-- Iter:5240,Loss:TOTAL:0.002652,G: 0.002478,Q: 1.312487,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 134][15/39] mae: 0.0025 rmse: 11.3732
+-- Iter:5260,Loss:TOTAL:0.003239,G: 0.003070,Q: 1.638513,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 134][35/39] mae: 0.0031 rmse: 13.1550
+EPOCH:134/200,Loss D:0.003805, Time 104m 49s
+-- Iter:5280,Loss:TOTAL:0.002908,G: 0.002760,Q: 1.315243,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 135][16/39] mae: 0.0028 rmse: 12.8029
+-- Iter:5300,Loss:TOTAL:0.003476,G: 0.003321,Q: 1.155337,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 135][36/39] mae: 0.0033 rmse: 14.4483
+EPOCH:135/200,Loss D:0.002537, Time 105m 34s
+-- Iter:5320,Loss:TOTAL:0.003009,G: 0.002849,Q: 1.256965,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 136][17/39] mae: 0.0028 rmse: 12.3957
+-- Iter:5340,Loss:TOTAL:0.002427,G: 0.002238,Q: 1.540194,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 136][37/39] mae: 0.0022 rmse: 10.1460
+EPOCH:136/200,Loss D:0.003691, Time 106m 20s
+-- Iter:5360,Loss:TOTAL:0.002699,G: 0.002561,Q: 1.206409,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 137][18/39] mae: 0.0026 rmse: 11.2586
+-- Iter:5380,Loss:TOTAL:0.003155,G: 0.003086,Q: 0.570586,Class:81.25,lr:[1.0000000000000002e-06]
+[epoch 137][38/39] mae: 0.0031 rmse: 14.2676
+EPOCH:137/200,Loss D:0.002470, Time 107m 7s
+-- Iter:5400,Loss:TOTAL:0.002709,G: 0.002578,Q: 0.950339,Class:81.25,lr:[1.0000000000000002e-06]
+[epoch 138][19/39] mae: 0.0026 rmse: 12.3268
+-- Iter:5420,Loss:TOTAL:0.003045,G: 0.002852,Q: 1.817209,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 138][39/39] mae: 0.0029 rmse: 15.6111
+EPOCH:138/200,Loss D:0.003045, Time 107m 53s
+-- Iter:5440,Loss:TOTAL:0.002337,G: 0.002197,Q: 1.301338,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 139][20/39] mae: 0.0022 rmse: 9.6318
+EPOCH:139/200,Loss D:0.004070, Time 108m 37s
+-- Iter:5460,Loss:TOTAL:0.002856,G: 0.002715,Q: 0.977219,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 140][1/39] mae: 0.0027 rmse: 11.7371
+-- Iter:5480,Loss:TOTAL:0.003349,G: 0.003194,Q: 1.361578,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 140][21/39] mae: 0.0032 rmse: 16.7450
+EPOCH:140/200,Loss D:0.002655, Time 109m 22s
+-- Iter:5500,Loss:TOTAL:0.002485,G: 0.002336,Q: 1.374992,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 141][2/39] mae: 0.0023 rmse: 11.4563
+-- Iter:5520,Loss:TOTAL:0.003178,G: 0.003029,Q: 1.420338,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 141][22/39] mae: 0.0030 rmse: 14.1724
+EPOCH:141/200,Loss D:0.003259, Time 110m 8s
+-- Iter:5540,Loss:TOTAL:0.003281,G: 0.003190,Q: 0.635536,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 142][3/39] mae: 0.0032 rmse: 15.8316
+-- Iter:5560,Loss:TOTAL:0.002751,G: 0.002634,Q: 1.039477,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 142][23/39] mae: 0.0026 rmse: 10.7059
+EPOCH:142/200,Loss D:0.002900, Time 110m 54s
+-- Iter:5580,Loss:TOTAL:0.002147,G: 0.002008,Q: 1.255369,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 143][4/39] mae: 0.0020 rmse: 10.8500
+-- Iter:5600,Loss:TOTAL:0.002921,G: 0.002712,Q: 1.795724,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 143][24/39] mae: 0.0027 rmse: 12.4088
+EPOCH:143/200,Loss D:0.002926, Time 111m 39s
+-- Iter:5620,Loss:TOTAL:0.003183,G: 0.003003,Q: 1.536470,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 144][5/39] mae: 0.0030 rmse: 13.4165
+-- Iter:5640,Loss:TOTAL:0.002832,G: 0.002688,Q: 1.361445,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 144][25/39] mae: 0.0027 rmse: 12.2021
+EPOCH:144/200,Loss D:0.002644, Time 112m 25s
+-- Iter:5660,Loss:TOTAL:0.003036,G: 0.002855,Q: 1.728488,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 145][6/39] mae: 0.0029 rmse: 13.5833
+-- Iter:5680,Loss:TOTAL:0.003100,G: 0.002892,Q: 1.776155,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 145][26/39] mae: 0.0029 rmse: 13.4934
+EPOCH:145/200,Loss D:0.002873, Time 113m 10s
+-- Iter:5700,Loss:TOTAL:0.004167,G: 0.004033,Q: 1.312218,Class:81.25,lr:[1.0000000000000002e-06]
+[epoch 146][7/39] mae: 0.0040 rmse: 20.8378
+-- Iter:5720,Loss:TOTAL:0.003161,G: 0.002975,Q: 1.814294,Class:81.25,lr:[1.0000000000000002e-06]
+[epoch 146][27/39] mae: 0.0030 rmse: 12.7981
+EPOCH:146/200,Loss D:0.002795, Time 113m 55s
+-- Iter:5740,Loss:TOTAL:0.002489,G: 0.002407,Q: 0.629299,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 147][8/39] mae: 0.0024 rmse: 10.8604
+-- Iter:5760,Loss:TOTAL:0.002875,G: 0.002618,Q: 2.197983,Class:100.0,lr:[1.0000000000000002e-06]
+[epoch 147][28/39] mae: 0.0026 rmse: 11.8470
+EPOCH:147/200,Loss D:0.002130, Time 114m 41s
+-- Iter:5780,Loss:TOTAL:0.002216,G: 0.002114,Q: 0.821440,Class:87.5,lr:[1.0000000000000002e-06]
+[epoch 148][9/39] mae: 0.0021 rmse: 9.1016
+-- Iter:5800,Loss:TOTAL:0.002378,G: 0.002187,Q: 1.817358,Class:81.25,lr:[1.0000000000000002e-06]
+[epoch 148][29/39] mae: 0.0022 rmse: 7.7143
+EPOCH:148/200,Loss D:0.002396, Time 115m 26s
+-- Iter:5820,Loss:TOTAL:0.003655,G: 0.003437,Q: 2.093856,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 149][10/39] mae: 0.0034 rmse: 17.5178
+-- Iter:5840,Loss:TOTAL:0.003862,G: 0.003718,Q: 1.053497,Class:93.75,lr:[1.0000000000000002e-06]
+[epoch 149][30/39] mae: 0.0037 rmse: 19.0471
+EPOCH:149/200,Loss D:0.002910, Time 116m 11s
+-- Iter:5860,Loss:TOTAL:0.004182,G: 0.003946,Q: 1.925952,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 150][11/39] mae: 0.0039 rmse: 19.2329
+-- Iter:5880,Loss:TOTAL:0.002808,G: 0.002675,Q: 1.048217,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 150][31/39] mae: 0.0027 rmse: 11.3370
+EPOCH:150/200,Loss D:0.003673, Time 116m 56s
+-- Iter:5900,Loss:TOTAL:0.003407,G: 0.003241,Q: 1.637246,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 151][12/39] mae: 0.0032 rmse: 14.5439
+-- Iter:5920,Loss:TOTAL:0.002956,G: 0.002753,Q: 1.634614,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 151][32/39] mae: 0.0028 rmse: 15.2242
+EPOCH:151/200,Loss D:0.002933, Time 117m 41s
+-- Iter:5940,Loss:TOTAL:0.003233,G: 0.003090,Q: 1.067316,Class:81.25,lr:[1.0000000000000002e-07]
+[epoch 152][13/39] mae: 0.0031 rmse: 16.6238
+-- Iter:5960,Loss:TOTAL:0.004192,G: 0.003952,Q: 1.967788,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 152][33/39] mae: 0.0040 rmse: 16.7527
+EPOCH:152/200,Loss D:0.001901, Time 118m 27s
+-- Iter:5980,Loss:TOTAL:0.002868,G: 0.002709,Q: 1.271322,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 153][14/39] mae: 0.0027 rmse: 12.2429
+-- Iter:6000,Loss:TOTAL:0.002889,G: 0.002728,Q: 1.304309,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 153][34/39] mae: 0.0027 rmse: 12.5542
+EPOCH:153/200,Loss D:0.004289, Time 119m 12s
+-- Iter:6020,Loss:TOTAL:0.002412,G: 0.002232,Q: 1.433702,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 154][15/39] mae: 0.0022 rmse: 9.2760
+-- Iter:6040,Loss:TOTAL:0.003206,G: 0.002991,Q: 1.818736,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 154][35/39] mae: 0.0030 rmse: 12.5557
+EPOCH:154/200,Loss D:0.003560, Time 119m 57s
+-- Iter:6060,Loss:TOTAL:0.003384,G: 0.003243,Q: 1.068869,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 155][16/39] mae: 0.0032 rmse: 14.9086
+-- Iter:6080,Loss:TOTAL:0.002852,G: 0.002748,Q: 0.875632,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 155][36/39] mae: 0.0027 rmse: 14.5961
+EPOCH:155/200,Loss D:0.003120, Time 120m 43s
+-- Iter:6100,Loss:TOTAL:0.002523,G: 0.002403,Q: 1.164853,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 156][17/39] mae: 0.0024 rmse: 9.8623
+-- Iter:6120,Loss:TOTAL:0.003474,G: 0.003297,Q: 1.698058,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 156][37/39] mae: 0.0033 rmse: 16.4321
+EPOCH:156/200,Loss D:0.002125, Time 121m 28s
+-- Iter:6140,Loss:TOTAL:0.002291,G: 0.002203,Q: 0.582104,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 157][18/39] mae: 0.0022 rmse: 8.5283
+-- Iter:6160,Loss:TOTAL:0.003612,G: 0.003403,Q: 2.066729,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 157][38/39] mae: 0.0034 rmse: 16.7747
+EPOCH:157/200,Loss D:0.002612, Time 122m 13s
+-- Iter:6180,Loss:TOTAL:0.003432,G: 0.003268,Q: 1.256235,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 158][19/39] mae: 0.0033 rmse: 15.8000
+-- Iter:6200,Loss:TOTAL:0.003318,G: 0.003142,Q: 1.558508,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 158][39/39] mae: 0.0031 rmse: 15.2741
+EPOCH:158/200,Loss D:0.003318, Time 122m 58s
+-- Iter:6220,Loss:TOTAL:0.002488,G: 0.002375,Q: 0.847107,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 159][20/39] mae: 0.0024 rmse: 9.9374
+EPOCH:159/200,Loss D:0.003075, Time 123m 43s
+-- Iter:6240,Loss:TOTAL:0.003688,G: 0.003566,Q: 1.077421,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 160][1/39] mae: 0.0036 rmse: 17.3389
+-- Iter:6260,Loss:TOTAL:0.003577,G: 0.003441,Q: 1.271841,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 160][21/39] mae: 0.0034 rmse: 17.1958
+EPOCH:160/200,Loss D:0.003438, Time 124m 29s
+-- Iter:6280,Loss:TOTAL:0.002771,G: 0.002596,Q: 1.459422,Class:75.0,lr:[1.0000000000000002e-07]
+[epoch 161][2/39] mae: 0.0026 rmse: 11.1191
+-- Iter:6300,Loss:TOTAL:0.002751,G: 0.002630,Q: 1.037252,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 161][22/39] mae: 0.0026 rmse: 11.8067
+EPOCH:161/200,Loss D:0.002453, Time 125m 17s
+-- Iter:6320,Loss:TOTAL:0.003892,G: 0.003714,Q: 1.716258,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 162][3/39] mae: 0.0037 rmse: 16.8340
+-- Iter:6340,Loss:TOTAL:0.001946,G: 0.001792,Q: 1.472615,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 162][23/39] mae: 0.0018 rmse: 7.4244
+EPOCH:162/200,Loss D:0.003783, Time 126m 7s
+-- Iter:6360,Loss:TOTAL:0.002156,G: 0.001967,Q: 1.705855,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 163][4/39] mae: 0.0020 rmse: 7.5262
+-- Iter:6380,Loss:TOTAL:0.002424,G: 0.002257,Q: 1.305152,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 163][24/39] mae: 0.0023 rmse: 10.2998
+EPOCH:163/200,Loss D:0.002452, Time 126m 52s
+-- Iter:6400,Loss:TOTAL:0.002468,G: 0.002238,Q: 1.736987,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 164][5/39] mae: 0.0022 rmse: 12.4857
+-- Iter:6420,Loss:TOTAL:0.003392,G: 0.003181,Q: 1.890275,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 164][25/39] mae: 0.0032 rmse: 15.5622
+EPOCH:164/200,Loss D:0.002534, Time 127m 37s
+-- Iter:6440,Loss:TOTAL:0.003203,G: 0.003071,Q: 1.051830,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 165][6/39] mae: 0.0031 rmse: 14.7500
+-- Iter:6460,Loss:TOTAL:0.002476,G: 0.002241,Q: 1.942598,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 165][26/39] mae: 0.0022 rmse: 9.5371
+EPOCH:165/200,Loss D:0.001998, Time 128m 22s
+-- Iter:6480,Loss:TOTAL:0.003178,G: 0.003041,Q: 1.092727,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 166][7/39] mae: 0.0030 rmse: 16.5330
+-- Iter:6500,Loss:TOTAL:0.002354,G: 0.002179,Q: 1.469635,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 166][27/39] mae: 0.0022 rmse: 10.0185
+EPOCH:166/200,Loss D:0.003921, Time 129m 7s
+-- Iter:6520,Loss:TOTAL:0.002446,G: 0.002301,Q: 1.317869,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 167][8/39] mae: 0.0023 rmse: 10.3973
+-- Iter:6540,Loss:TOTAL:0.001558,G: 0.001393,Q: 0.976695,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 167][28/39] mae: 0.0014 rmse: 4.8206
+EPOCH:167/200,Loss D:0.003564, Time 129m 56s
+-- Iter:6560,Loss:TOTAL:0.002779,G: 0.002618,Q: 1.041837,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 168][9/39] mae: 0.0026 rmse: 12.4304
+-- Iter:6580,Loss:TOTAL:0.002839,G: 0.002668,Q: 1.370511,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 168][29/39] mae: 0.0027 rmse: 11.7248
+EPOCH:168/200,Loss D:0.003076, Time 130m 45s
+-- Iter:6600,Loss:TOTAL:0.002805,G: 0.002662,Q: 1.322097,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 169][10/39] mae: 0.0027 rmse: 11.1759
+-- Iter:6620,Loss:TOTAL:0.003000,G: 0.002791,Q: 1.499334,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 169][30/39] mae: 0.0028 rmse: 15.1412
+EPOCH:169/200,Loss D:0.003131, Time 131m 35s
+-- Iter:6640,Loss:TOTAL:0.002632,G: 0.002426,Q: 1.943384,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 170][11/39] mae: 0.0024 rmse: 9.6886
+-- Iter:6660,Loss:TOTAL:0.002738,G: 0.002542,Q: 1.722828,Class:81.25,lr:[1.0000000000000002e-07]
+[epoch 170][31/39] mae: 0.0025 rmse: 10.6263
+EPOCH:170/200,Loss D:0.002363, Time 132m 24s
+-- Iter:6680,Loss:TOTAL:0.002957,G: 0.002801,Q: 1.464874,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 171][12/39] mae: 0.0028 rmse: 11.6842
+-- Iter:6700,Loss:TOTAL:0.004470,G: 0.004325,Q: 1.395217,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 171][32/39] mae: 0.0043 rmse: 19.3824
+EPOCH:171/200,Loss D:0.002503, Time 133m 13s
+-- Iter:6720,Loss:TOTAL:0.003791,G: 0.003681,Q: 0.979277,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 172][13/39] mae: 0.0037 rmse: 16.2941
+-- Iter:6740,Loss:TOTAL:0.003211,G: 0.003016,Q: 1.857458,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 172][33/39] mae: 0.0030 rmse: 13.8682
+EPOCH:172/200,Loss D:0.002427, Time 134m 0s
+-- Iter:6760,Loss:TOTAL:0.001861,G: 0.001769,Q: 0.745677,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 173][14/39] mae: 0.0018 rmse: 8.0300
+-- Iter:6780,Loss:TOTAL:0.004073,G: 0.003930,Q: 1.014487,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 173][34/39] mae: 0.0039 rmse: 17.3226
+EPOCH:173/200,Loss D:0.003070, Time 134m 47s
+-- Iter:6800,Loss:TOTAL:0.002873,G: 0.002774,Q: 0.962897,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 174][15/39] mae: 0.0028 rmse: 12.3404
+-- Iter:6820,Loss:TOTAL:0.002742,G: 0.002580,Q: 1.455829,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 174][35/39] mae: 0.0026 rmse: 11.4744
+EPOCH:174/200,Loss D:0.004013, Time 135m 34s
+-- Iter:6840,Loss:TOTAL:0.003421,G: 0.003192,Q: 1.844400,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 175][16/39] mae: 0.0032 rmse: 16.7892
+-- Iter:6860,Loss:TOTAL:0.002561,G: 0.002407,Q: 1.208340,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 175][36/39] mae: 0.0024 rmse: 9.1951
+EPOCH:175/200,Loss D:0.002634, Time 136m 21s
+-- Iter:6880,Loss:TOTAL:0.002201,G: 0.002067,Q: 1.130769,Class:81.25,lr:[1.0000000000000002e-07]
+[epoch 176][17/39] mae: 0.0021 rmse: 8.9230
+-- Iter:6900,Loss:TOTAL:0.004299,G: 0.004160,Q: 1.178502,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 176][37/39] mae: 0.0042 rmse: 20.7093
+EPOCH:176/200,Loss D:0.002767, Time 137m 9s
+-- Iter:6920,Loss:TOTAL:0.003176,G: 0.002973,Q: 1.885009,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 177][18/39] mae: 0.0030 rmse: 11.7818
+-- Iter:6940,Loss:TOTAL:0.002876,G: 0.002677,Q: 1.688671,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 177][38/39] mae: 0.0027 rmse: 11.9155
+EPOCH:177/200,Loss D:0.002245, Time 137m 57s
+-- Iter:6960,Loss:TOTAL:0.003668,G: 0.003472,Q: 1.671704,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 178][19/39] mae: 0.0035 rmse: 16.4301
+-- Iter:6980,Loss:TOTAL:0.002910,G: 0.002798,Q: 1.053181,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 178][39/39] mae: 0.0028 rmse: 12.2568
+EPOCH:178/200,Loss D:0.002910, Time 138m 44s
+-- Iter:7000,Loss:TOTAL:0.003163,G: 0.002980,Q: 1.424911,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 179][20/39] mae: 0.0030 rmse: 12.8744
+EPOCH:179/200,Loss D:0.003403, Time 139m 31s
+-- Iter:7020,Loss:TOTAL:0.002541,G: 0.002411,Q: 0.945883,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 180][1/39] mae: 0.0024 rmse: 10.3603
+-- Iter:7040,Loss:TOTAL:0.002334,G: 0.002170,Q: 1.512433,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 180][21/39] mae: 0.0022 rmse: 9.8865
+EPOCH:180/200,Loss D:0.001577, Time 140m 18s
+-- Iter:7060,Loss:TOTAL:0.003125,G: 0.002932,Q: 1.665424,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 181][2/39] mae: 0.0029 rmse: 13.0333
+-- Iter:7080,Loss:TOTAL:0.003448,G: 0.003361,Q: 0.494605,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 181][22/39] mae: 0.0034 rmse: 18.0811
+EPOCH:181/200,Loss D:0.002445, Time 141m 5s
+-- Iter:7100,Loss:TOTAL:0.003155,G: 0.003037,Q: 0.814876,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 182][3/39] mae: 0.0030 rmse: 13.2210
+-- Iter:7120,Loss:TOTAL:0.002448,G: 0.002276,Q: 1.354576,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 182][23/39] mae: 0.0023 rmse: 8.8932
+EPOCH:182/200,Loss D:0.003889, Time 141m 52s
+-- Iter:7140,Loss:TOTAL:0.002982,G: 0.002755,Q: 2.027227,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 183][4/39] mae: 0.0028 rmse: 13.6832
+-- Iter:7160,Loss:TOTAL:0.002794,G: 0.002679,Q: 1.112152,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 183][24/39] mae: 0.0027 rmse: 11.6335
+EPOCH:183/200,Loss D:0.002320, Time 142m 38s
+-- Iter:7180,Loss:TOTAL:0.002399,G: 0.002297,Q: 0.924200,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 184][5/39] mae: 0.0023 rmse: 9.6105
+-- Iter:7200,Loss:TOTAL:0.002759,G: 0.002679,Q: 0.651808,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 184][25/39] mae: 0.0027 rmse: 11.1167
+EPOCH:184/200,Loss D:0.003474, Time 143m 25s
+-- Iter:7220,Loss:TOTAL:0.002796,G: 0.002613,Q: 1.735894,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 185][6/39] mae: 0.0026 rmse: 15.2411
+-- Iter:7240,Loss:TOTAL:0.002877,G: 0.002646,Q: 1.949334,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 185][26/39] mae: 0.0026 rmse: 12.5218
+EPOCH:185/200,Loss D:0.003012, Time 144m 12s
+-- Iter:7260,Loss:TOTAL:0.003178,G: 0.003100,Q: 0.511814,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 186][7/39] mae: 0.0031 rmse: 15.5380
+-- Iter:7280,Loss:TOTAL:0.003566,G: 0.003363,Q: 1.809618,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 186][27/39] mae: 0.0034 rmse: 15.6775
+EPOCH:186/200,Loss D:0.001770, Time 144m 59s
+-- Iter:7300,Loss:TOTAL:0.002659,G: 0.002497,Q: 1.461787,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 187][8/39] mae: 0.0025 rmse: 11.1746
+-- Iter:7320,Loss:TOTAL:0.003047,G: 0.002877,Q: 1.567092,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 187][28/39] mae: 0.0029 rmse: 13.3048
+EPOCH:187/200,Loss D:0.002541, Time 145m 44s
+-- Iter:7340,Loss:TOTAL:0.002840,G: 0.002699,Q: 1.210891,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 188][9/39] mae: 0.0027 rmse: 12.1767
+-- Iter:7360,Loss:TOTAL:0.003416,G: 0.003273,Q: 1.244022,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 188][29/39] mae: 0.0033 rmse: 17.4470
+EPOCH:188/200,Loss D:0.002299, Time 146m 29s
+-- Iter:7380,Loss:TOTAL:0.002004,G: 0.001838,Q: 1.374102,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 189][10/39] mae: 0.0018 rmse: 7.5243
+-- Iter:7400,Loss:TOTAL:0.002995,G: 0.002837,Q: 1.476715,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 189][30/39] mae: 0.0028 rmse: 12.6565
+EPOCH:189/200,Loss D:0.002388, Time 147m 15s
+-- Iter:7420,Loss:TOTAL:0.002600,G: 0.002392,Q: 1.901976,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 190][11/39] mae: 0.0024 rmse: 9.9914
+-- Iter:7440,Loss:TOTAL:0.003375,G: 0.003216,Q: 1.565930,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 190][31/39] mae: 0.0032 rmse: 14.2119
+EPOCH:190/200,Loss D:0.003449, Time 148m 0s
+-- Iter:7460,Loss:TOTAL:0.002840,G: 0.002759,Q: 0.764309,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 191][12/39] mae: 0.0028 rmse: 11.9775
+-- Iter:7480,Loss:TOTAL:0.003915,G: 0.003734,Q: 1.533465,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 191][32/39] mae: 0.0037 rmse: 16.3407
+EPOCH:191/200,Loss D:0.003490, Time 148m 46s
+-- Iter:7500,Loss:TOTAL:0.002595,G: 0.002452,Q: 1.247310,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 192][13/39] mae: 0.0025 rmse: 10.7165
+-- Iter:7520,Loss:TOTAL:0.003868,G: 0.003689,Q: 1.706558,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 192][33/39] mae: 0.0037 rmse: 17.8562
+EPOCH:192/200,Loss D:0.003039, Time 149m 31s
+-- Iter:7540,Loss:TOTAL:0.002894,G: 0.002690,Q: 1.655513,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 193][14/39] mae: 0.0027 rmse: 12.1261
+-- Iter:7560,Loss:TOTAL:0.003287,G: 0.003118,Q: 1.586681,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 193][34/39] mae: 0.0031 rmse: 14.2362
+EPOCH:193/200,Loss D:0.003328, Time 150m 17s
+-- Iter:7580,Loss:TOTAL:0.003436,G: 0.003300,Q: 1.097832,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 194][15/39] mae: 0.0033 rmse: 14.5284
+-- Iter:7600,Loss:TOTAL:0.002000,G: 0.001925,Q: 0.662399,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 194][35/39] mae: 0.0019 rmse: 8.4866
+EPOCH:194/200,Loss D:0.002807, Time 151m 3s
+-- Iter:7620,Loss:TOTAL:0.002689,G: 0.002569,Q: 1.141587,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 195][16/39] mae: 0.0026 rmse: 10.8730
+-- Iter:7640,Loss:TOTAL:0.003109,G: 0.002846,Q: 1.904131,Class:87.5,lr:[1.0000000000000002e-07]
+[epoch 195][36/39] mae: 0.0028 rmse: 14.4175
+EPOCH:195/200,Loss D:0.003539, Time 151m 48s
+-- Iter:7660,Loss:TOTAL:0.003291,G: 0.003163,Q: 1.117195,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 196][17/39] mae: 0.0032 rmse: 14.1690
+-- Iter:7680,Loss:TOTAL:0.004024,G: 0.003849,Q: 1.402125,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 196][37/39] mae: 0.0038 rmse: 15.7098
+EPOCH:196/200,Loss D:0.002078, Time 152m 33s
+-- Iter:7700,Loss:TOTAL:0.002259,G: 0.002133,Q: 1.059050,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 197][18/39] mae: 0.0021 rmse: 10.2195
+-- Iter:7720,Loss:TOTAL:0.003192,G: 0.003055,Q: 1.031764,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 197][38/39] mae: 0.0031 rmse: 15.9470
+EPOCH:197/200,Loss D:0.002688, Time 153m 22s
+-- Iter:7740,Loss:TOTAL:0.002452,G: 0.002337,Q: 0.941563,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 198][19/39] mae: 0.0023 rmse: 12.6548
+-- Iter:7760,Loss:TOTAL:0.002662,G: 0.002447,Q: 1.677480,Class:100.0,lr:[1.0000000000000002e-07]
+[epoch 198][39/39] mae: 0.0024 rmse: 9.8883
+EPOCH:198/200,Loss D:0.002662, Time 154m 8s
+-- Iter:7780,Loss:TOTAL:0.003536,G: 0.003352,Q: 1.795921,Class:93.75,lr:[1.0000000000000002e-07]
+[epoch 199][20/39] mae: 0.0034 rmse: 15.9759
+EPOCH:199/200,Loss D:0.002132, Time 154m 54s
