@@ -5,7 +5,7 @@ TRAIN:
   EXT_TYPE: 'ho_wd'
   TRAIN_MODE: 'train_split_1'
 
-  EVAL_START_EPOCH: 192
+  EVAL_START_EPOCH: 193
   DROPOUT: 0.1
 
   LOSS: L1
@@ -28,7 +28,7 @@ TRAIN:
   MERGE: 'cross-attention'
   NORM_TYPE: 'LN'
 
-  MODEL_DIM: 256
+  MODEL_DIM: 512
   ATT_NUM: 2
   CROSS_ATT_NUM: 0
   IS_MASK_ATT: 1
