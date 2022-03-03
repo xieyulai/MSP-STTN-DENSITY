@@ -29,7 +29,7 @@ class Dataset:
         self.length = Length
         self.is_seq = Is_seq
 
-        if self.dataset == 'TaxiBJ':
+        if self.dataset == 'DENSITY':
             self.nb_flow = 1
             self.dim_h = 200
             self.dim_w = 200
@@ -78,20 +78,21 @@ class Dataset:
         # without removing incomplete days
 
         # print(f'=============={self.inp_type} 输入加载成功！=============')
-        raw_data = np.load('./data/raw_data/data.npy')
-        raw_date = np.load('./data/raw_data/date.npy')
+        raw_data = np.load('./data/DENSITY/raw_data/data.npy')
+        raw_date = np.load('./data/DENSITY/raw_data/date.npy')
 
         if self.train_mode == 'train_split_2' and self.ext_type == 'ho_wd':
-            inp_path = f'./data/AVG6_4_2_wd_ho/expectation_inp.npy'
-            ext_cls_path = f'./data/AVG6_4_2_wd_ho/expectation_cls.npy'
+            inp_path = f'./data/DENSITY/AVG6_4_2/expectation_inp.npy'
+            ext_cls_path = f'./data/DENSITY/AVG6_4_2/expectation_cls.npy'
             raw_data = raw_data[16*self.T:]
             raw_date = raw_date[16*self.T:]
         elif self.train_mode == 'train_split_1' and self.ext_type == 'ho_wd':
-            inp_path = f'./data/AVG6_4_1_wd_ho/expectation_inp.npy'
-            ext_cls_path = f'./data/AVG6_4_1_wd_ho/expectation_cls.npy'
+            inp_path = f'./data/DENSITY/AVG6_4_1/expectation_inp.npy'
+            ext_cls_path = f'./data/DENSITY/AVG6_4_1/expectation_cls.npy'
         elif self.train_mode == 'train_split_1' and self.ext_type == 'ho':
-            inp_path = f'./data/AVG6_4_1/expectation_inp.npy'
-            ext_cls_path = f'./data/AVG6_4_1/expectation_cls.npy'
+            #deprecated
+            inp_path = f'./data/DENSITY/AVG6_4_1/expectation_inp.npy'
+            ext_cls_path = f'./data/DENSITY/AVG6_4_1/expectation_cls.npy'
         else:
             raise print('param error')
 

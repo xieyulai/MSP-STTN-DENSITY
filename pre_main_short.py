@@ -31,7 +31,7 @@ class DataConfiguration:
         super().__init__()
 
         # Data
-        self.name = 'TaxiBJ'
+        self.name = 'DENSITY'
         self.portion = 1.  # portion of data
 
         self.len_close = Len_close
