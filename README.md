@@ -18,7 +18,7 @@ PyTorch > 1.07
 Please refer to `requirements.txt`
 
 ### Data Preparation
-- Processing data according to [MSP-STTN-DATA]().
+- Processing data according to [MSP-STTN-DATA](https://github.com/xieyulai/MSP-STTN-DATA).
 - The `data\` should be like this:
 ```bash
 data
