@@ -24,59 +24,43 @@ Please refer to `requirements.txt`
 data
 ___ DENSITY
 ```
-- Or the processed data can be downloaded from [BAIDU_PAN](https://pan.baidu.com/s/11V0XBDXOi4rkxP6YI8VI6A),PW:`a7m7`.
+- Or the processed data can be downloaded from [BAIDU_PAN](https://pan.baidu.com/s/1tLvQx-f-HijwCObUX_AZdA),PW:`woqt`.
+
 
 ### Pre-trained Models
-- Several pre-trained models can be downloaded from [BAIDU_PAN](https://pan.baidu.com/s/1_YO_NVuvCv45p0vG5enZLw), PW:`0f6e`.
+- Several pre-trained models can be downloaded from [BAIDU_PAN](https://pan.baidu.com/s/1g7Ymmdx2FlQn-XlLd7MNhQ), PW:`gy7c`.
 - The `model\` should be like this:
 ```bash
 model
-___ Imp_0043
-___ ___ pre_model_12.pth
-___ Imp_0047
-___ ___ pre_model_34.pth
-___ Imp_0051
-___ ___ pre_model_2.pth
-___ Imp_104
-___ ___ pre_model_46.pth
-___ Imp_1051
-___ ___ pre_model_3.pth
-___ Imp_115
-___ ___ pre_model_26.pth
-___ Imp_2051
-___ ___ pre_model_2.pth
-___ Imp_3089
-___ ___ pre_model_79.pth
-___ Imp_5042
-___ ___ pre_model_36.pth
-___ Imp_5047
-___ ___ pre_model_10.pth
-___ Imp_5050
-    ___ pre_model_2.pth
+___ Imp_1712
+___ ___ pre_model_94.pth
+___ Imp_3711
+___ ___ pre_model_194.pth
+___ Imp_5712
+___ ___ pre_model_149.pth
+___ Imp_5720
+___ ___ pre_model_193.pth
+___ Imp_5721
+    ___ pre_model_1.pth
 ```
-- Use `sh BEST.sh` for short-term prediction.
-- Use `sh BEST_long.sh` for short-term prediction.
+- Use `sh BEST_1.sh` for *scheme1*.
+- Use `sh BEST_2.sh` for *scheme2*.
 
 ### Train and Test
 - Use `sh TRAIN.sh` for short-term prediction.
-- Use `sh TRAIN_long.sh` for short-term prediction.
 
 ### Repo Structure
 ```bash
-___ BEST_long.sh
-___ BEST.sh
+___ BEST_1.sh
+___ BEST_2.sh
 ___ data # Data
 ___ dataset
 ___ model # Store the training weights
 ___ net # Network struture
-___ pre_main_long.py # Main function for long-term prediction
 ___ pre_main_short.py # Main function for shot-term prediction
-___ pre_setting_nyc_long.yaml # Configuration for long-term prediction
-___ pre_setting_nyc.yaml # Configuration for short-term prediction
+___ pre_setting_density.yaml # Configuration for short-term prediction
 ___ README.md
 ___ record # Recording the training and the test
-___ test # Record the result under time slots in testing set
-___ TRAIN_long.sh
 ___ TRAIN.sh
 ___ util
 ```

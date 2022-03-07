@@ -1,4 +1,5 @@
 #!/bin/bash
+#  <RECORD> is the training and record ID
 #DIM256
 #RECORD=5720
 #DI512M

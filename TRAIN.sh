@@ -1,4 +1,5 @@
 #!/bin/bash
+#  <RECORD> is the training and record ID
 RECORD=5721
 
 ###TRAIN
